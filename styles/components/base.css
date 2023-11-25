@@ -1,0 +1,39 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --branco-secundario: #EDEDED;
+    --cinza-secundario: #C0C0C0;
+    --botao-vermelho: #b31f1f;
+    --preto-principal: #2B3A3C;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Open Sans';
+}
+
+@font-face {
+    font-family: 'Bozon';
+    src: url(./../../assets/fonts/Bozon.otf) format('OpenType');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bozon Bold';
+    src: url(./../../assets/fonts/Bozon_Bold.otf) format('OpenType');
+    font-display: swap;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: rgb(70, 126, 126); */
+}
+
+.cta{
+    font-family: 'Bozon';
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    border: solid 1px;
+    font-weight: 600;
+    padding: 11px 15px;
+    border-radius: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

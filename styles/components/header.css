@@ -1,0 +1,229 @@
+/* ===================HEADER======================== */
+.header{
+    /* position: fixed; */
+    background-color: #ededed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: brown; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header_container img {
+    width: 110px;
+}
+
+
+.header_container nav {
+    display: flex;
+}
+
+.header_container nav ul {
+    display: flex;
+}
+
+.header_container li {
+    padding-right: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .95em;
+    line-height: 24px;
+}
+
+.header_container a {
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: #2B3A3C;
+}
+
+.header_container a:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.list__item{
+    background:
+        linear-gradient(to right,
+            var(--branco-secundario),
+            var(--branco-secundario)
+            ),
+        linear-gradient(to right,
+            var(--botao-vermelho),
+            var(--botao-vermelho),
+            var(--botao-vermelho)
+            );
+
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.contact {
+    background-color: var(--branco-secundario);
+    color: var(--botao-vermelho) !important;
+    padding: 11px 40px;
+}
+
+
+.contact:hover {
+    background-color: #6B1D5D !important;
+    background-color: var(--botao-vermelho) !important;
+    color: var(--branco-secundario) !important;
+    font-weight: 600 !important;
+    transition: 0.4s ease;
+}
+
+
+
+
+/* ---------------- HAMBURGUER ----------------- */
+@-webkit-keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.menu.active {
+    display: flex !important;
+    position: absolute !important;
+    width: 50% !important;
+    height: calc(100vh - 20vh) !important;
+    top: 100px !important;
+    right: 0% !important;
+    z-index: 1000 !important;
+    overflow-y: hidden !important;
+    border-right: 0px;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    background-color: #ededed;
+}
+
+.menu.active ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu.active ul li {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: solid 1px var(--botao-vermelho);
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.menu.active a {
+    color: #2B3A3C;
+}
+
+.menu.active li:nth-last-child(1) {
+    border-bottom: solid 1px #ffbb4500;
+    font-size: 20px;
+}
+
+.hamburguer-container {
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    display: none;
+    padding-right: 10px;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+.hamburguer-container label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+.hamburguer-container label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--botao-vermelho);
+    transition: 0.25s ease-in-out;
+}
+
+
+.hamburguer-container label span:nth-child(1) {
+    top: 0;
+}
+
+.hamburguer-container label span:nth-child(2) {
+    top: 8px;
+}
+
+.hamburguer-container label span:nth-child(3) {
+    top: 16px;
+}
+
+
+#checkbox-menu:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+#checkbox-menu:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+@media screen and (max-width:900px) {
+    .menu {
+        display: none !important;
+    }
+
+    .hamburguer-container {
+        display: flex;
+        margin-left: 10px;
+    }
+}
+
+/*----------------- HAMBURGUER END ----------------- */

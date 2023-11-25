@@ -1,0 +1,74 @@
+/* BANNER */
+.banner {
+    width: 100%;
+    position: relative;
+    background-image: url(./../../assets/imagens/banner2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner__content {
+    width: 100%;
+    height: 100%;
+    padding: 90px 0px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+}
+
+.banner__container {
+    /* background-color: rgba(127, 204, 255, 0.267); */
+    display: flex;
+}
+
+/* .banner__container div {
+    margin: 100px 0px;
+} */
+
+.banner__text {
+    /* background-color: rgba(165, 42, 42, 0.329); */
+    width: 70%;
+    padding: 8em 0;
+}
+
+.banner__title {
+    color: var(--branco-principal);
+    font-size: 3em;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+.banner__text span::before {
+    content: "";
+    display: block;
+    background: var(--botao-vermelho);
+    height: .4em;
+    border-radius: 1em;
+    margin: 0em 0 0.5em 0em;
+    margin-bottom: 20px;
+    width: 5em;
+}
+
+.banner__paragraf {
+    color: var(--branco-principal);
+    font-size: 1.25em;
+    line-height: 1.1;
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.banner__cta {
+    color: var(--branco-principal);
+    background-color: var(--botao-vermelho);
+    border: none;
+}
+
+.banner__cta:hover{
+    background-color: var(--branco-principal);
+    color: var(--botao-vermelho);
+    transition: .2s ease-in;
+}
