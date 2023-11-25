@@ -1,0 +1,38 @@
+.especialidades__container h2{
+   text-align: center;
+   padding: 2em 0;
+}
+
+.especialidades__container h2::after{
+    content: "";
+    display: block;
+    margin: 10px auto;
+    background: var(--botao-vermelho);
+    height: 0.15em;
+    border-radius: 1em;
+    width: 5em;
+}
+
+.especialidades__cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.especialidades__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.especialidades__card img{
+    width: 50px;
+    background-color: var(--botao-vermelho);
+    opacity: .9;
+    padding: .5em;
+    border-radius: 50%;
+    overflow: visible;
+    margin-bottom: 1em;
+}
