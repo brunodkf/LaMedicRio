@@ -53,7 +53,7 @@
 
 .banner__paragraf {
     color: var(--branco-principal);
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.1;
     position: relative;
     margin: 0;
@@ -64,6 +64,7 @@
     color: var(--branco-principal);
     background-color: var(--botao-vermelho);
     border: none;
+    font-size: .9em;
 }
 
 .banner__cta:hover{
