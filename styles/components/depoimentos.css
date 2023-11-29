@@ -24,6 +24,16 @@
 
 .depoimentos__container {
     display: flex;
+    padding-top: 4em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.depoimentos__text{
+    width: 55%;
+}
+.depoimentos__decoration{
+    width: 45%;
 }
 
 .depoimentos__text h2{
@@ -39,9 +49,77 @@
 
 .depoimentos__text p{
     color: var(--branco-principal);
+    line-height: 1.4em;
+}
+
+.depoimentos__card{
+    width: 90%;
+    margin-top: 20px;
+    background-color: var(--branco-principal);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    border-radius: 20px;
+    padding: .5em;
+    position: relative;
+}
+
+.depoimentos__card::before{
+    content: "";
+    background-image: url(./../../assets/imagens/56331760.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #911818 solid 15px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -20px;
+    left: -15px;
+}
+
+.depoimentos__card--topo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding: .5em;
+    position: relative;
+}
+.depoimentos__card--topo h3{
+    text-transform: uppercase;
+    font-family: 'Bozon Bold';
+    border-bottom: solid 1px var(--botao-vermelho);
+}
+
+.depoimentos__card--topo small{
+    margin-top: .5em;
+    font-style: italic;
 }
 
 
-.depoimentos__decoration img {
-   width: 400px;
+.depoimentos__card--base{
+    padding: 1em 1em;
+}
+.depoimentos__card--base p{
+    color: var(--preto-principal) !important ;
+    margin-top: .6em;
+}
+
+.depoimentos__card--avaliacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.depoimentos__card--avaliacao ul{
+    display: flex;
+}
+
+.depoimentos__card--avaliacao ul img{
+    width: 25px;
+}
+
+.depoimentos__card--avaliacao small{
+    font-style: italic;
 }
