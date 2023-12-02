@@ -1,0 +1,16 @@
+/* HEADER / BANNER */
+@media screen and (max-width: 500px){
+    /* header */
+    .header__container a:hover{
+        background-size: none;
+    }
+    a.list__item {
+        background: none !important;
+    }
+    /* header final */
+    /* banner */
+    div.banner__text {
+        width: 100%;
+        padding: 4em 0;
+    }
+}

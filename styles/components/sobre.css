@@ -1,0 +1,14 @@
+.sobre {
+    background: linear-gradient(180deg, #991622 0%, #911818 51%, #750b0b 98%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+/* .sobre__container img {
+    width: 40%;
+    padding: 2em;
+    margin: 2em;
+    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 50%));
+} */

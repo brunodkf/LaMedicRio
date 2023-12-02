@@ -1,12 +1,12 @@
 .depoimentos {
     background: #991622;
-    background: linear-gradient(180deg, #991622 0%, #911818 51%, #750b0b 98%);
+    /* background: linear-gradient(180deg, #991622 0%, #911818 51%, #750b0b 98%); */
     margin-top: 6em;
     position: relative;
     overflow-x: clip;
 }
-
 .depoimentos::before {
+    top: -2em;
     content: "";
     display: inline-block;
     position: absolute;
@@ -16,10 +16,8 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: -2em;
     z-index: -1;
     background-color: #991622;
-    /* background-image: linear-gradient(to right, #9d3a2e 25em, #a75e26 calc(100% - 25em)); */
 }
 
 .depoimentos__container {
@@ -35,7 +33,9 @@
 .depoimentos__decoration{
     width: 45%;
 }
-
+.depoimentos__decoration img{
+    width: 100%;
+}
 .depoimentos__text h2{
     color: var(--branco-principal);
     font-size: 2em;
