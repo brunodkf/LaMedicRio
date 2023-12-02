@@ -9,6 +9,9 @@
     }
     /* header final */
     /* banner */
+    .banner__container{
+        height: calc(100vh - 100px);
+    }
     div.banner__text {
         width: 100%;
         padding: 4em 0;
