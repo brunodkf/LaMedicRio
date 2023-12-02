@@ -5,7 +5,7 @@
     position: relative;
     overflow-x: clip;
 }
-.depoimentos::before {
+/* .depoimentos::before {
     top: -2em;
     content: "";
     display: inline-block;
@@ -18,11 +18,11 @@
     transform: translateX(-50%);
     z-index: -1;
     background-color: #991622;
-}
+} */
 
 .depoimentos__container {
     display: flex;
-    padding-top: 4em;
+    padding: 4em 0;
     justify-content: space-between;
     align-items: center;
 }
