@@ -24,4 +24,15 @@
         margin-top: 3em;
     }
 
+    /* clients */
+    div.clients__slider {
+        margin-right: 20em;
+        animation: scroll 10s infinite linear;
+    }
+    div.client img {
+        width: 100px;
+        height: 50px;
+        margin: 0 1em;
+    }
+
 }
