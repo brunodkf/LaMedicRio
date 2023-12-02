@@ -13,4 +13,9 @@
         width: 100%;
         padding: 4em 0;
     }
+    .banner__cta{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
 }
