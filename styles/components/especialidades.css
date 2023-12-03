@@ -1,7 +1,7 @@
-
-.especialidades__container{
+.especialidades__container {
     padding-bottom: 2em;
 }
+
 .especialidades__container h2 {
     text-align: center;
     padding: 1.5em 0;
@@ -46,8 +46,6 @@
     overflow: visible;
     margin-bottom: 1em;
 }
-
-
 .especialidades__card ul {
     margin-top: 1em;
     font-size: .8em;
@@ -60,7 +58,7 @@
     align-items: center;
 }
 
-.especialidades__card span{
+.especialidades__card span {
     content: "";
     width: 4px;
     height: 4px;
@@ -69,6 +67,8 @@
     display: block;
     margin-right: 3px;
 }
+
+
 .especialidades__container p {
     margin-top: 1em;
     text-align: center;

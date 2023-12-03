@@ -1,0 +1,47 @@
+.topo__button{
+    opacity: 0;
+    background-color: var(--branco-principal);
+    border: solid 1px var(--botao-vermelho);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 10;
+    right: 25px;
+    bottom: 20px;
+    animation: moviment 3s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.topo__button.show{
+    opacity: 1;
+    transition: .5s ease-in;
+}
+
+.topo__button:hover{
+    background-color: var(--botao-vermelho);
+    border: solid 2px var(--branco-principal);
+    transition: .5s ease;
+}
+
+.topo__button:hover img{
+    transition: .2s ease;
+    filter: invert(100%) sepia(1%) saturate(899%) hue-rotate(166deg) brightness(180%) contrast(100%);
+}
+
+.topo__button img{
+    width: 80%;
+    padding: .2em 0;
+}
+
+@keyframes moviment {
+    0%{
+        transform: translateY(20%);
+    }
+    50%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(20%);
+    }
+}
