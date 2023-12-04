@@ -1,15 +1,13 @@
-
-
 // menu mobile
 
 const button = document.querySelector('[data-button-menu]');
-
 
 button.addEventListener('click', function () {
   const navMenu = document.querySelector('.menu');
   navMenu.classList.toggle('active');
 
 });
+
 
 
 // Mostra botão após 50% da página
@@ -26,4 +24,5 @@ const voltaTopo = ()=>{
 
 window.addEventListener('scroll', ()=>{
   voltaTopo();
-})
+});
+ 
