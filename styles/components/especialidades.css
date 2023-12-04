@@ -11,10 +11,10 @@
     content: "";
     display: block;
     margin: 10px auto;
-    background: var(--botao-vermelho);
+    background: var(--vermelho-secundario);
     height: 0.15em;
     border-radius: 1em;
-    width: 5em;
+    width: 2em;
 }
 
 .especialidades__cards {

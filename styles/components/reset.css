@@ -69,6 +69,13 @@ h3 {
     color: var(--preto-principal);
 }
 
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 1.8em;
+}
+
 p {
     color: var(--preto-principal);
 }
@@ -79,4 +86,9 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
     background-color: var(--branco-secundario);
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

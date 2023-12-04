@@ -1,5 +1,18 @@
 .sobre{
     width: 100%;
-    height: 900px;
-    background-color: aliceblue;
+    height: 600px;
+    background-color: #750b0b;
+    position: relative;
+}
+
+.sobre__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobre__imagem{
+    text-align: center;
+}
+.sobre__imagem img{
+    width: 50%;
 }
