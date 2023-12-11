@@ -1,3 +1,6 @@
+.especialidades{
+    position: relative;
+}
 .especialidades__container {
     padding-bottom: 2em;
     overflow-x: clip;
@@ -81,4 +84,16 @@
 
 .especialidades__cards--swiper{
     overflow: visible;
+}
+
+
+
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: var(--vermelho-secundario);
+    padding: 0.5em 0.7em;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
