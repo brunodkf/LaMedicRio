@@ -1,5 +1,6 @@
 .especialidades__container {
     padding-bottom: 2em;
+    overflow-x: clip;
 }
 
 .especialidades__container h2 {
@@ -18,11 +19,11 @@
 }
 
 .especialidades__cards {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: stretch;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     padding-bottom: 30px;
 }
 
@@ -75,4 +76,9 @@
     font-size: 1em;
     font-weight: 500;
     color: var(--preto-principal);
+}
+
+
+.especialidades__cards--swiper{
+    overflow: visible;
 }
