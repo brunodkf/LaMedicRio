@@ -12,6 +12,7 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%), linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 100%);
+    position: relative;
 }
 
 .banner__container {
@@ -27,7 +28,18 @@
     /* background-color: rgba(165, 42, 42, 0.329); */
     width: 70%;
     padding: 8em 0;
+    animation: inText 2s;
 }
+
+@keyframes inText {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
 
 .banner__title {
     color: var(--branco-principal);
@@ -37,7 +49,7 @@
     position: relative;
     margin: 0;
     margin-bottom: 20px;
-    text-shadow: 0 4px 4px rgba(0,0,0,.25);
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 }
 
 .banner__text span::before {
@@ -54,10 +66,15 @@
 .banner__paragraf {
     color: var(--branco-principal);
     font-size: 1em;
-    line-height: 1.1;
+    line-height: 1.5;
+    font-weight: 500;
     position: relative;
     margin: 0;
-    margin-bottom: 30px;
+}
+
+
+.banner__paragraf:nth-last-child(2) {
+    margin-bottom: 2em;
 }
 
 .banner__cta {
@@ -67,8 +84,80 @@
     font-size: .9em;
 }
 
-.banner__cta:hover{
+.banner__cta:hover {
     background-color: var(--branco-principal);
     color: var(--botao-vermelho);
     transition: .2s ease-in;
+}
+
+
+
+/* Redes Sociais do Banner */
+
+@keyframes inSocial {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.banner__socials {
+    width: 50px;
+    height: 180px;
+    border: solid 3px var(--botao-vermelho);
+    border-right: none;
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    position: absolute;
+    right: 0;
+    top: 36%;
+    overflow: hidden;
+    animation: inSocial 1s;
+}
+.banner__socials:hover{
+    border: solid 3px var(--vermelho-principal);
+}
+.banner__socials:hover .banner__socialList{
+    background-color: var(--vermelho-principal);
+    transition: ease .3s;
+}
+.banner__socialList {
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.banner__redes{
+    width: 40px;
+    height: 40px;
+}
+.banner__redes span {
+    content: "";
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+}
+.banner__redes:nth-child(1) span {
+    background-image: url(./../../assets/imagens/socials/instagram.svg);
+}
+.banner__redes:nth-child(2) span {
+    background-image: url(./../../assets/imagens/socials/email.png);
+}
+.banner__redes:nth-child(3) span {
+    background-image: url(./../../assets/imagens/socials/linkedin.svg);
+}
+
+.banner__redes span:hover{
+    transform: scale(1.15);
+    transition: ease .2s;
 }
