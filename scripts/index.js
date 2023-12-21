@@ -1,5 +1,4 @@
 // menu mobile
-
 const button = document.querySelector('[data-button-menu]');
 
 button.addEventListener('click', function () {
@@ -14,7 +13,6 @@ button.addEventListener('click', function () {
 const backToTop = document.querySelector('.topo__button');
 
 const voltaTopo = ()=>{
-  console.log('FUNCIONA')
   if(window.scrollY >= 700){
     backToTop.classList.add('show');
   }else{
@@ -55,3 +53,22 @@ const swiper = new Swiper('.swiper', {
 
 
 });
+
+
+
+
+
+// Animação Exclusivo
+
+   const observer = new IntersectionObserver(entries =>{
+    if(entries[0].intersectionRatio>0){
+        entries[0].target.classList.add('animate')
+    }else{
+        entries[0].target.classList.remove('animate')
+    }
+}, {
+    threshold: 0
+})
+
+observer.observe(document.querySelector('[data-target="exclusivo"]'))
+
