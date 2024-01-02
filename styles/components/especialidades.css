@@ -2,13 +2,28 @@
     position: relative;
 }
 .especialidades__container {
-    padding-bottom: 2em;
+    padding-bottom: 5em;
+    padding-top: 2.5em;
     overflow-x: clip;
+    text-align: center;
+}
+
+
+.especialidades__tag{
+    font-weight: 600;
+    color: var(--vermelho-secundario);
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: 'Bozon Bold';
+    position: relative;
+    opacity: .8;
+    margin-top: 1.5em;
 }
 
 .especialidades__container h2 {
     text-align: center;
-    padding: 1.5em 0;
+    padding-top: .8em;
+    padding-bottom: 1.5em ;
 }
 
 .especialidades__container h2::after {
