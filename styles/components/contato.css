@@ -1,3 +1,10 @@
 .contato{
-    background-color: #750b0b;
+    background-color: #520808;
 }
+
+.contato__container h2{
+    text-align: center;
+    color: var(--branco-secundario);
+    margin-bottom: 1.5em;
+}
+
