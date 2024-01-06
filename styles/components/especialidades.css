@@ -16,7 +16,7 @@
     font-size: .8em;
     font-family: 'Bozon Bold';
     position: relative;
-    opacity: .8;
+    /* opacity: .8; */
     margin-top: 1.5em;
 }
 .especialidades__tag::before{
@@ -26,7 +26,7 @@
     border-radius: 20px;
     top: 45%;
     left: -20px;
-    opacity: .8;
+    /* opacity: .8; */
     display: block;
     position: absolute;
     background-color: var(--vermelho-secundario);

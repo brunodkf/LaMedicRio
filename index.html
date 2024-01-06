@@ -218,6 +218,7 @@
     <section class="depoimentos" id="depoimentos-target">
         <div class="depoimentos__container container">
             <div class="depoimentos__text">
+                <span class="depoimentos__tag">Especialidades</span>
                 <h2>A Melhor do Brasil !</h2>
                 <p>
                     Com o melhor atendimento, procuramos atender suas necessidades da melhor forma possível,
@@ -279,20 +280,17 @@
     <section class="contato" id="contato-target">
         <div class="contato__container container">
             <h2>Entre em contato e peça já o seu orçamento!</h2>
-            <form>
-                <label for="firstname">First name: </label>
-                <input type="text" name="firstname" required>
+            <form class="contato__form">
+                <label for="firstname">Nome : </label>
+                <input placeholder="Nome" class="contato__form--campo" type="text" name="firstname"  required>
                 <br>
-                <label for="lastname">Last name: </label>
-                <input type="text" name="lastname" required>
+                <label for="phone">Telefone : </label>
+                <input placeholder="(xx) xxxxx-xxxx" class="contato__form--campo" type="tel" name="phone" required>
                 <br>
-                <label for="email">email: </label>
-                <input type="email" name="email" required>
+                <label for="email">Email : </label>
+                <input placeholder="exemplo@email.com" class="contato__form--campo" type="email" name="email" required>
                 <br>
-                <label for="password">password: </label>
-                <input type="password" name="password" required>
-                <br>
-                <input type="submit" value="Login!">
+                <input class="contato__form--submit" type="submit" value="Enviar">
             </form>
         </div>
     </section>

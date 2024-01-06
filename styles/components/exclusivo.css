@@ -11,7 +11,7 @@
     font-size: .8em;
     font-family: 'Bozon Bold';
     position: relative;
-    opacity: .8;
+    /* opacity: .8; */
     margin-left: 23px;
 }
 .exclusivo__container span::after{
@@ -44,6 +44,8 @@
 .exclusivo__main{
     display: flex;
     justify-content: space-around;
+    max-width: 88%;
+    margin: 0 auto;
     margin-top: 4em;
     position: relative;
 }

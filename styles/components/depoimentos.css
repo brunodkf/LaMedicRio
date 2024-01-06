@@ -1,6 +1,8 @@
 .depoimentos {
-    background: #991622;
-    background: linear-gradient(180deg, #991622 0%, #690e0e 61%, #520808 98%);
+    background: #9b1b1b;
+    /* background: linear-gradient(180deg, #991622 0%, #690e0e 61%, #520808 98%); */
+    /* background: linear-gradient(180deg, #b31f1f 0%, #991622 61%, #81010c 98%); */
+    background: linear-gradient(180deg, #9b1b1b 0%, #80131c 61%, #69010a 98%);
     margin-top: 10em;
     position: relative;
     overflow-x: clip;
@@ -18,7 +20,7 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: -1;
-    background-color: #991622;
+    background-color: #9b1b1b;
 }
 
 .depoimentos__container {
@@ -27,6 +29,43 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+}
+
+.depoimentos__tag{
+    font-weight: 600;
+    color: var(--branco-principal);
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: 'Bozon Bold';
+    position: relative;
+    /* opacity: .8; */
+    margin-top: 1.5em;
+}
+
+.depoimentos__tag::before{
+    content: '';
+    width: 10px;
+    height: 2.2px;
+    border-radius: 20px;
+    top: 45%;
+    left: -20px;
+    /* opacity: .8; */
+    display: block;
+    position: absolute;
+    background-color: var(--branco-principal);
+    
+}
+
+.depoimentos__tag::after{
+    content: '';
+    width: 4px;
+    height: 2.2px;
+    border-radius: 50%;
+    top: 45%;
+    left: -8px;
+    display: block;
+    position: absolute;
+    background-color: var(--branco-principal);
 }
 
 .depoimentos__text {
@@ -52,11 +91,12 @@
     position: relative;
     margin: 0;
     margin-bottom: 20px;
+    margin-top: 10px;
     text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-  
+
 }
 
-.depoimentos__text h2::after{
+.depoimentos__text h2::after {
     content: "";
     display: block;
     margin: 10px auto;
@@ -83,7 +123,7 @@
 
 .depoimentos__card::before {
     content: "";
-    background-image: url(./../../assets/imagens/56331760.png);
+    background-image: url(./../../assets/imagens/depoimento1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +135,10 @@
     top: -11px;
     left: -8px;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.depoimentos__card:nth-child(2)::before {
+    background-image: url(./../../assets/imagens/depoimento2.jpg);
 }
 
 .depoimentos__card--topo {

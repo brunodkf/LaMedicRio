@@ -1,10 +1,71 @@
-.contato{
-    background-color: #520808;
+.contato {
+    background-color: #69010a;
+    position: relative;
+    overflow-x: clip;
 }
 
-.contato__container h2{
+.contato::before {
+    top: 19em;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 10em;
+    width: calc(100% + 50em);
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: #69010a;
+}
+
+.contato__container {
+    padding-bottom: 4em;
+}
+
+.contato__container h2 {
     text-align: center;
-    color: var(--branco-secundario);
+    color: var(--branco-principal);
     margin-bottom: 1.5em;
 }
+
+.contato__form {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato__form label {
+    color: var(--branco-secundario);
+    padding-bottom: .7em;
+    font-weight: 600;
+    letter-spacing: .8px;
+    font-family: "Bozon";
+}
+.contato__form--campo{
+    font-size: 1em;
+    padding: 0.5em;
+    padding-left: 0.7em;
+    border: none;
+    border-radius: 5px;
+}
+.contato__form--submit {
+    max-width: 180px;
+    padding: 1em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* color: var(--branco-secundario); */
+    color: var(--branco-principal);
+    font-weight: 600;
+    font-family: 'Bozon';
+    cursor: pointer;
+    letter-spacing: 1px;
+    background: #ea2626;
+    background: linear-gradient(10deg, #ea2626 0%, #cf1a22 100%);
+}
+
 
