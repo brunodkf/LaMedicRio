@@ -64,3 +64,47 @@
     transform: translateX(-100%);
   }
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+      /* clients */
+      div.clients__slider {
+        margin-right: 20em;
+        animation: scroll 10s infinite linear;
+    }
+
+    div.client img {
+        width: 100px;
+        height: 50px;
+        margin: 0 1em;
+    }
+
+    div.depoimentos__container {
+        display: flex;
+        padding-top: 2em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.depoimentos__text, 
+    div.depoimentos__decoration {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+    div.depoimentos__card {
+        width: 100%;
+    }
+    div.depoimentos__decoration{
+        text-align: center;
+    }
+    div.depoimentos__card{
+        margin-bottom: 2em;
+    }
+  
+}

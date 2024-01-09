@@ -225,7 +225,7 @@ background-image: linear-gradient(86deg, rgba(144,17,17,1) 0%, rgba(134,14,14,1)
     top: 8px;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
     .menu {
         display: none !important;
     }
@@ -233,6 +233,15 @@ background-image: linear-gradient(86deg, rgba(144,17,17,1) 0%, rgba(134,14,14,1)
     .hamburguer-container {
         display: flex;
         margin-left: 10px;
+    }
+
+
+    .header__container a:hover {
+        background-size: none;
+    }
+
+    a.list__item {
+        background: none !important;
     }
 }
 
