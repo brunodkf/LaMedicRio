@@ -1,0 +1,35 @@
+.footer{
+    background-color: var(--vermelho-principal);
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.footer__logo{
+    width: 120px;
+}
+.footer__main{
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__socialList{
+    display: flex;
+}
+
+.footer__socialList img{
+    width: 35px;
+    margin: 0px 10px;
+}
+
+.footer__copy{
+    color: var(--branco-principal);
+    font-size: .7em;
+}
