@@ -184,8 +184,8 @@
 
     .banner__socials{
         position: relative;
-        width: 70%;
-        height: 80px;
+        width: 50%;
+        height: 55px;
         margin: 0 auto;
         border-right: solid 3px var(--botao-vermelho);
         border-top-right-radius: 20px;
@@ -196,6 +196,7 @@
         height: auto;
         width: 100%;
         flex-direction: row;
+        padding: 0.4em 0;
     }
 
     .banner__redes {
