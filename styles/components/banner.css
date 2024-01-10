@@ -182,6 +182,32 @@
         padding: 18px;
     }
 
+    .banner__socials{
+        position: relative;
+        width: 70%;
+        height: 80px;
+        margin: 0 auto;
+        border-right: solid 3px var(--botao-vermelho);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom: none;
+    }
+    .banner__socialList{
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .banner__redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__redes span{
+       position: inherit;
+    }
+
 
 }
 
