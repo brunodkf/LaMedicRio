@@ -71,7 +71,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 2em;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20px;
 }
 
@@ -118,6 +119,8 @@
 
 .especialidades__cards--swiper{
     overflow: visible;
+    margin: 10px;
+
 }
 
 
@@ -130,16 +133,4 @@
     padding: 0.5em 0.7em;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-
-@media screen and (max-width: 500px){
-    .especialidades__cards--swiper{
-        overflow: visible;
-        margin: 10px;
-    }
-    .especialidades__card {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-    
 }
