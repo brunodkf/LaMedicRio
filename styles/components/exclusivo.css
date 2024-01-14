@@ -214,11 +214,11 @@
     }
 
     .exclusivo.animate .exclusivo__card:nth-child(1) {
-        transform: translateY(20%) !important;
+        transform: translateY(10%) !important;
     }
 
     .exclusivo.animate .exclusivo__card:nth-child(3) {
-        transform: translateY(-20%) !important;
+        transform: translateY(10%) !important;
     }
 
     .exclusivo__central {
@@ -226,6 +226,11 @@
         display: inline-block;
     }
 
+    .exclusivo__central img{
+        width: 40%;
+        max-width: none;
+        max-height: none;
+    }
     .exclusivo__central::after {
         top: 18%;
     }
