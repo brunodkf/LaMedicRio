@@ -192,8 +192,14 @@
 
 
 
-@media screen and (max-width: 500px){
+@media screen and  (max-width: 900px){
     .depoimentos{
         margin-top: .6em;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+    .depoimentos{
+        margin-top: 6em;
     }
 }
