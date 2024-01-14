@@ -31,7 +31,7 @@
     flex-direction: column;
 }
 
-.depoimentos__tag{
+.depoimentos__tag {
     font-weight: 600;
     color: var(--branco-principal);
     text-transform: uppercase;
@@ -42,7 +42,7 @@
     margin-top: 1.5em;
 }
 
-.depoimentos__tag::before{
+.depoimentos__tag::before {
     content: '';
     width: 10px;
     height: 2.2px;
@@ -53,10 +53,10 @@
     display: block;
     position: absolute;
     background-color: var(--branco-principal);
-    
+
 }
 
-.depoimentos__tag::after{
+.depoimentos__tag::after {
     content: '';
     width: 4px;
     height: 2.2px;
@@ -192,14 +192,44 @@
 
 
 
-@media screen and  (max-width: 900px){
-    .depoimentos{
+@media screen and (max-width: 900px) {
+    .depoimentos {
         margin-top: .6em;
     }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1200px){
-    .depoimentos{
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .depoimentos {
         margin-top: 6em;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    div.depoimentos__container {
+        display: flex;
+        padding-top: 2em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.depoimentos__text,
+    div.depoimentos__decoration {
+        margin-bottom: 2em;
+    }
+
+    div.depoimentos__card {
+        width: 100%;
+    }
+    div.depoimentos__text{
+        width: 100%;
+    }
+    div.depoimentos__decoration {
+        text-align: center;
+        width: 80%;
+    }
+
+    div.depoimentos__card {
+        margin-bottom: 2em;
     }
 }
