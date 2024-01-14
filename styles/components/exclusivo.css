@@ -186,12 +186,25 @@
         height: auto;
     }
 
-    .exclusivo__card{
+    /* .exclusivo__card{
         transform: none !important;
+    } */
+
+    .exclusivo__card{
+        transform: translateX(0px) !important;
+    }
+    .exclusivo__card:nth-child(1){
+        transform: translateY(10%) !important;
+    }
+    .exclusivo__card:nth-child(3){
+        transform: translateY(-10%) !important;
     }
 
     .exclusivo__central {
         width: 100%;
+    }
+    .exclusivo__central::after {
+        top: 18%;
     }
     
 }
