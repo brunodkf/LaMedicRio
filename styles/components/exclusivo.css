@@ -1,7 +1,7 @@
 
 .exclusivo{
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
 }
 
 .exclusivo__container span{
@@ -163,3 +163,35 @@
     padding-bottom: 1em;
 }
 
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .exclusivo__main {
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        margin-top: 4em;
+        position: relative;
+    }
+    .exclusivo__card {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .exclusivo__card{
+        transform: none !important;
+    }
+
+    .exclusivo__central {
+        width: 100%;
+    }
+    
+}
