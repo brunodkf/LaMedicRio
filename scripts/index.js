@@ -7,6 +7,14 @@ button.addEventListener('click', function () {
 });
 
 
+// const button = document.querySelector('[data-button-menu]');
+
+// button.addEventListener('click', function () {
+//   const navMenu = document.querySelector('.header');
+//   navMenu.classList.toggle('active');
+// });
+
+
 
 // Mostra botão após 50% da página
 const backToTop = document.querySelector('.topo__button');
