@@ -44,13 +44,15 @@
     letter-spacing: .8px;
     font-family: "Bozon";
 }
-.contato__form--campo{
+
+.contato__form--campo {
     font-size: 1em;
     padding: 0.5em;
     padding-left: 0.7em;
     border: none;
     border-radius: 5px;
 }
+
 .contato__form--submit {
     max-width: 180px;
     padding: 1em;
@@ -69,3 +71,27 @@
 }
 
 
+
+
+@media screen and (max-width: 900px){
+    .contato__form {
+        width: 100%;
+        margin: 0 auto;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato__form--campo {
+        padding: 0.8em;
+    }
+
+    .contato__form--submit {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 230px;
+        margin-top: 2em;
+        padding: 1em;
+        font-size: 1em;
+    }
+}

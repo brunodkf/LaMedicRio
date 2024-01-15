@@ -8,14 +8,36 @@
     align-items: center;
 }
 
-.sobre__imagem{
+.sobre__imagem {
     width: 20%;
 }
-.sobre__text{
+
+.sobre__text {
     width: 80%;
 }
 
-.sobre__text p{
+.sobre__text p {
     margin-top: 1em;
     line-height: 1.1em;
+}
+
+
+@media screen and (max-width:500px) {
+    .sobre__container {
+        flex-direction: column;
+    }
+
+    .sobre__text {
+        width: 100%;
+    }
+
+    .sobre__imagem {
+        width: 100%;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .sobre__imagem img {
+        width: 60%;
+    }
 }
