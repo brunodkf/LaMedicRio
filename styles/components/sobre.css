@@ -30,6 +30,10 @@
     .sobre__text {
         width: 100%;
     }
+    .sobre__text p {
+        margin-top: 1em;
+        line-height: 1.4em;
+    }
 
     .sobre__imagem {
         width: 100%;
