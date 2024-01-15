@@ -132,6 +132,7 @@
     left: 0;
     z-index: 1000 !important;
     overflow-y: hidden !important;
+    overflow-x: clip;
     border-right: 0px;
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
@@ -140,6 +141,7 @@
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     background-color: #ededed;
 }
+
 
 .menu.active ul {
     width: 100%;
