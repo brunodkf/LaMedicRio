@@ -74,6 +74,9 @@
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
+    
+    background-position-y: 20px;
+    padding-bottom: 10px;
 }
 
 .contact {
