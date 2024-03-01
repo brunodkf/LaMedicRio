@@ -23,7 +23,7 @@
 
 <body>
     <a href="#topo" aria-label="volta ao topo" class="topo__button">
-        <img src="./assets/imagens/icons8-acima-48.png" alt="Botao de volta ao topo">
+        <img src="./assets/imagens/icons8-acima-48.webp" alt="Botao de volta ao topo">
     </a>
 
     <section class="header" id="topo">
@@ -279,7 +279,8 @@
     <section class="contato" id="contato">
         <div class="contato__container container">
             <h2>Entre em contato e peça já o seu orçamento!</h2>
-            <form class="contato__form">
+            
+            <form class="contato__form" action="https://api.staticforms.xyz/submit" method="post">
                 <label for="firstname">Nome : </label>
                 <input placeholder="Nome" class="contato__form--campo" type="text" name="firstname" required>
                 <br>
@@ -290,7 +291,7 @@
                 <input placeholder="exemplo@email.com" class="contato__form--campo" type="email" name="email" required>
                 <br>
                 <label for="message">Mensagem : </label>
-                <textarea placeholder="Fique a vontade para descrever aquilo que mais lhe interessa!" class="contato__form--campo" name="message" required cols="30" rows="10"></textarea>
+                <textarea placeholder="Fique a vontade para descrever aquilo que mais lhe interessa!" class="contato__form--campo" name="message" type="text" required cols="30" rows="10"></textarea>
                 <br>
                 <input class="contato__form--submit" type="submit" value="Enviar">
             </form>
