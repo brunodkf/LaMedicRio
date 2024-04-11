@@ -45,11 +45,14 @@
 
 .client img {
   width: 130px;
-  height: 50px;
+  max-height: 50px;
   margin: 0 1.5em;
+  filter: contrast(1.85) brightness(.3);
 }
 
 .client {
+  display: flex;
+  align-items: center;
   height: 50px;
 }
 

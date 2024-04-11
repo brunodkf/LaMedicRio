@@ -6,6 +6,7 @@
 .sobre__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sobre__imagem {
@@ -13,7 +14,10 @@
 }
 
 .sobre__text {
-    width: 80%;
+    width: 75%;
+}
+.sobre__text h2{
+    font-size: 1.4em;
 }
 
 .sobre__text p {
