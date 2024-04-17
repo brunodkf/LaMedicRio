@@ -40,8 +40,23 @@ window.addEventListener('scroll', () => {
 
 
 
+// Animação Exclusivo
+
+const observer = new IntersectionObserver(entries => {
+  if (entries[0].intersectionRatio > 0) {
+    entries[0].target.classList.add('animate')
+  } else {
+    entries[0].target.classList.remove('animate')
+  }
+}, {
+  threshold: 0
+})
+
+observer.observe(document.querySelector('[data-target="exclusivo"]'))
+
+
 // Nossas Especialidades
-const swiper = new Swiper('.swiper', {
+const swiperEspecialidades = new Swiper('.especialidades__cards--swiper', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 30,
@@ -69,20 +84,26 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
+    // Optional parameters
+    slidesPerView: 2,
+    centeredSlides: true,
+    direction: 'horizontal',
+    spaceBetween: 30,
+    loop: true,
+  
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.depoimentos-button-next',
+      prevEl: '.depoimentos-button-prev',
+    },
+
+});
 
 
 
-// Animação Exclusivo
-
-const observer = new IntersectionObserver(entries => {
-  if (entries[0].intersectionRatio > 0) {
-    entries[0].target.classList.add('animate')
-  } else {
-    entries[0].target.classList.remove('animate')
-  }
-}, {
-  threshold: 0
-})
-
-observer.observe(document.querySelector('[data-target="exclusivo"]'))
 

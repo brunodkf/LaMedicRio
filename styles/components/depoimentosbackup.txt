@@ -1,16 +1,12 @@
 .depoimentos {
-    /* width: 90vw; */
-    margin: 0 auto;
     background: #9b1b1b;
     background: linear-gradient(180deg, #9b1b1b 0%, #80131c 61%, #69010a 98%);
     margin-top: 10em;
-    margin-bottom: 10em;
     position: relative;
     overflow-x: clip;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-/* .depoimentos::before {
+.depoimentos::before {
     top: -2em;
     content: "";
     display: inline-block;
@@ -23,19 +19,6 @@
     transform: translateX(-50%);
     z-index: -1;
     background-color: #9b1b1b;
-} */
-.depoimentos::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    z-index: 1;
-    top: 0px;
-    right: 0;
-    opacity: 0.3;
-    background-image: radial-gradient(#ffffff 2.5px, #ff000000 2px);
-    background-size: 40px 40px;
 }
 
 .depoimentos::after {
@@ -43,19 +26,18 @@
     display: block;
     position: absolute;
     width: 200px;
-    height: 200px;
+    height: 600px;
     z-index: 1;
-    top: 10px;
-    opacity: 0.3;
+    top: 120px;
+    /* opacity: 0.3;
     background-image: radial-gradient(#ffffff 2.5px, #ff000000 2px);
-    background-size: 40px 40px;
+    background-size: 40px 40px; */
 
 }
 
 .depoimentos__container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
+    padding: 5em 0;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
@@ -102,7 +84,6 @@
     width: 70%;
     text-align: center;
     margin-bottom: 1em;
-    padding: 2em;
 }
 
 
@@ -135,94 +116,13 @@
 }
 
 .depoimentos__decoration--swiper {
-    /* width: 100%;
+    width: 90%;
     padding: 3em;
-    margin: 5em 0;
+
     border: 1px solid rgba(255, 255, 255, 0.226);
     border-radius: 20px;
-    position: relative; */
-
-    width: calc(100% + 110px);
-    padding: 3em;
-    margin: 5em 0;
-    margin-top: 20px;
-    position: relative;
-
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: visible;
-}
-
-.depoimentos__card,
-.depoimentos__card h3,
-.depoimentos__card p {
-    color: var(--branco-principal);
-}
-
-.depoimentos__card {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(3, 3, 3, 0.37);
-    backdrop-filter: blur(1.5px);
-    -webkit-backdrop-filter: blur(1.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px;
-    padding: 1em;
-}
-
-.depoimentos__card--topo {
     position: relative;
 }
-
-.depoimentos__card--topo h3 {
-    font-family: 'Open Sans';
-}
-
-.depoimentos__card--topo small {
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-
-.depoimentos__card--topo ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.depoimentos__card--topo img {
-    width: 22px;
-}
-
-.depoimentos__card--topo p {
-    font-size: 1.3em;
-    padding-left: .5em;
-}
-
-.depoimentos__card--topo::before {
-    content: '';
-    width: 120px;
-    height: 120px;
-    position: absolute;
-    display: block;
-    top: -20px;
-    right: 10px;
-    filter: invert(.8);
-    opacity: .2;
-    background-image: url(./../../assets/imagens/icons8-aspa-50.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.depoimentos__card--base p{
-    font-size: 1em;
-    margin: 2.2em 0;
-}
-
-
-
 
 .depoimentos-button-next,
 .depoimentos-button-prev {
@@ -230,7 +130,6 @@
     position: absolute;
     cursor: pointer;
     top: 45%;
-    display: none;
 }
 
 .depoimentos-button-next {
@@ -244,7 +143,10 @@
     margin-left: 10px;
 }
 
-
+.depoimentos__card, .depoimentos__card h3, .depoimentos__card p {
+    text-align: center;
+    color: var(--branco-principal);
+}
 
 @media screen and (min-width: 901px) and (max-width: 1024px) {
     .depoimentos {

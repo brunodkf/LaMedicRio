@@ -2,6 +2,7 @@
     background-color: #69010a;
     position: relative;
     overflow-x: clip;
+    z-index: 2;
 }
 
 .contato::before {
@@ -18,6 +19,7 @@
     z-index: -1;
     background-color: #69010a;
 }
+
 
 .contato__container {
     padding-bottom: 4em;
