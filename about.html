@@ -9,20 +9,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Médic Rio</title>
+    <meta name="description" content="Somos os mais qualificados para o atendimento a: Urologia, Ginecologia,
+    Proctologia e Cirurgia Geral">
+    <title>LA Médic Rio | Construindo um amanhã mais saudável</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/imagens/E9BFDB9D.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/imagens/favicon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 
 <body>
-    <a href="#topo" class="topo__button">
-        <img src="./assets/imagens/icons8-acima-48.png" alt="">
+    <a href="#topo" aria-label="volta ao topo" class="topo__button">
+        <img src="./assets/imagens/icons8-acima-48.webp" alt="Botao de volta ao topo">
     </a>
 
-    <!-- header / banner -->
     <section class="header" id="topo">
         <div class="header__container container">
             <a href="#">
@@ -31,17 +34,17 @@
 
             <nav class="menu" id="nav-menu">
                 <ul class="menu__list">
-                    <li><a class="list__item" href="#especialidades-target">Especialidades</a></li>
-                    <li><a class="list__item" href="#depoimentos-target">Depoimentos</a></li>
-                    <li><a class="list__item" href="#desafio-target">Produtos</a></li>
-                    <li><a class="list__item" href="./about.html">Quem Somos</a></li>
-                    <li> <a class="contact cta" href="#contato-target">Contato</a></li>
+                    <li><a class="list__item" href="index.html#especialidades">Especialidades</a></li>
+                    <li><a class="list__item" href="#depoimentos">Depoimentos</a></li>
+                    <li><a class="list__item" href="#desafio-target">Produtos</a></li> <!--Ideia de página extra-->
+                    <li><a class="list__item" href="#sobre">Quem Somos</a></li>
+                    <li> <a class="contact cta" href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
 
             <div class="hamburguer-container" id="btn-mobile">
-                <input type="checkbox" id="checkbox-menu" data-button-menu>
+                <input aria-label="checkbox" type="checkbox" id="checkbox-menu" data-button-menu>
                 <label for="checkbox-menu">
                     <span></span>
                     <span></span>
@@ -58,172 +61,79 @@
                     <h1 class="banner__title">Construindo um amanhã mais saudável com os melhores equipamentos hoje.
                     </h1>
                     <span></span>
-                    <p class="banner__paragraf">A melhor do Brasil, agora a um click de distância!</p>
-                    <a class="banner__cta cta" href="#">Consulte nossos especialistas</a>
+                    <p class="banner__paragraf">Onde a saúde é primordial, a LA Médic Rio se dedica a qualidade de vida
+                        e ao bem-estar. </p>
+                    <p class="banner__paragraf">Somos os mais qualificados para o atendimento a: Urologia, Ginecologia,
+                        Proctologia e Cirurgia Geral</p>
+                    <a class="banner__cta cta" href="#contato">Consulte nossos especialistas</a>
                 </div>
+            </div>
+            <div class="banner__socials">
+                <ul class="banner__socialList">
+                    <li class="banner__redes"><a target="_blank"
+                            href="https://www.instagram.com/la.medic.rio/"><span></span></a></li>
+                    <li class="banner__redes"><a target="_blank"
+                            href="mailto:comercial@lamedicrio.com"><span></span></a></li>
+                    <li class="banner__redes"><a target="_blank"
+                            href="https://www.linkedin.com/in/la-medic-rio-406495207/"><span></span></a></li>
+                </ul>
             </div>
         </div>
     </section>
-    <!-- Fim header / banner -->
 
     <section class="clients">
         <div class="clients__container container">
             <div class="clients__slider">
-                <div class="client"><img src="./assets/imagens/clients/logo-aliansce.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-athena.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-b3.svg" alt="#"></div>
-                <div class="client"><img src="./assets/imagens/clients/logo-bmg.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-safra.svg" alt="#"></div>
+                <div class="client"><img src="./assets/imagens/clients/image1.png" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image2.webp" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image3.png" alt="#"></div>
+                <div class="client"><img src="./assets/imagens/clients/image4.webp" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image5.png" alt="#"></div>
             </div>
             <div class="clients__slider">
-                <div class="client"><img src="./assets/imagens/clients/logo-aliansce.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-athena.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-b3.svg" alt="#"></div>
-                <div class="client"><img src="./assets/imagens/clients/logo-bmg.svg" alt="#"></div>
-                <div class="client"> <img src="./assets/imagens/clients/logo-safra.svg" alt="#"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="especialidades" id="especialidades-target">
-        <div class="especialidades__container container">
-
-            <h2>Nossas Especialidades</h2>
-
-            <div class="especialidades__cards">
-                <div class="especialidades__card">
-                    <img src="./assets/imagens/icons8-reproductive-system-66.png" alt="">
-                    <h3>Urologia</h3>
-
-                    <ul>
-                        <li><span></span>Aspirador Poole reto</li>
-                        <li><span></span>Valva de Doyen</li>
-                        <li><span></span>Pinça Babcock</li>
-                    </ul>
-                </div>
-
-                <div class="especialidades__card">
-                    <img src="./assets/imagens/icons8-útero-50.png" alt="">
-                    <h3>Ginecologia</h3>
-
-                    <ul>
-                        <li><span></span>Espéculo Vaginal </li>
-                        <li><span></span>Escova Cervical</li>
-                        <li><span></span>Fixador Celular</li>
-                    </ul>
-
-                </div>
-
-                <div class="especialidades__card">
-                    <img src="./assets/imagens/icons8-intestino-50.png" alt="">
-                    <h3>Proctologia</h3>
-
-                    <ul>
-                        <li><span></span>Afastador Farabeuf </li>
-                        <li><span></span>Espéculo Sims Retal</li>
-                        <li><span></span>Porta Agulha Mayo</li>
-                    </ul>
-
-                </div>
-
-                <div class="especialidades__card">
-                    <img src="./assets/imagens/icons8-surgery-equipment-50.png" alt="">
-                    <h3>Cirurgia Geral</h3>
-
-                    <ul>
-                        <li><span></span>Campo cirúrgico</li>
-                        <li><span></span>Afastador Farabeuf</li>
-                        <li><span></span>Tesoura Íris</li>
-                    </ul>
-                </div>
-            </div>
-
-            <p>Além desses items, você encontra muito mais em contato com nossos atendentes, <b> solicite seu
-                    orçamento!</b></p>
-        </div>
-    </section>
-
-    <section class="depoimentos" id="depoimentos-target">
-        <div class="depoimentos__container container">
-            <div class="depoimentos__text">
-                <h2>A Melhor do Brasil !</h2>
-                <p>
-                    Com o melhor atendimento, procuramos atender suas necessidades da melhor forma possível,
-                    proporcionando uma experiência extremamente satisfatória.
-                </p>
-
-               
-            </div>
-            <div class="depoimentos__decoration">
-                <div class="depoimentos__card">
-                    <div class="depoimentos__card--topo">
-                        <h3>Cliente Genérico</h3>
-                        <small>Cirurgião Geral</small>
-                    </div>
-                    <div class="depoimentos__card--base">
-                        <p>In et convallis magna, id auctor eros. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nulla mauris odio, laoreet eu sagittis ut, faucibus vel nunc. Mauris mollis vulputate
-                            lacus quis efficitur. </p>
-                    </div>
-                    <div class="depoimentos__card--avaliacao">
-                        <ul>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                        </ul>
-                        <small>Novembro 2023</small>
-                    </div>
-                </div>
-                <div class="depoimentos__card">
-                    <div class="depoimentos__card--topo">
-                        <h3>Cliente Genérico</h3>
-                        <small>Cirurgião Geral</small>
-                    </div>
-                    <div class="depoimentos__card--base">
-                        <p>In et convallis magna, id auctor eros. Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nulla mauris odio, laoreet eu sagittis ut, faucibus vel nunc. Mauris mollis vulputate
-                            lacus quis efficitur. </p>
-                    </div>
-                    <div class="depoimentos__card--avaliacao">
-                        <ul>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                            <li><img src="./assets/imagens/estrela.png" alt=""></li>
-                        </ul>
-                        <small>Novembro 2023</small>
-                    </div>
-                </div>
+                <div class="client"><img src="./assets/imagens/clients/image1.png" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image2.webp" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image3.png" alt="#"></div>
+                <div class="client"><img src="./assets/imagens/clients/image4.webp" alt="#"></div>
+                <div class="client"> <img src="./assets/imagens/clients/image5.png" alt="#"></div>
             </div>
         </div>
     </section>
 
 
-    <section class="contato" id="contato-target">
-        <div class="contato__container container">
-            <!-- <h2>Entre em contato  e peça já o seu orçamento!</h2>
-            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-            <script>
-                hbspt.forms.create({
-                    region: "na1",
-                    portalId: "44515975",
-                    formId: "0c45909f-719c-496e-b8ad-4f3336d8acd3"
-                });
-            </script> -->
+    <section class="footer">
+        <div class="footer__container container">
+            <div class="footer__main">
+                <div class="footer__logo">
+                    <img width="60" height="60" src="./assets/imagens/logo__branca.webp" alt="Logo Branca">
+                </div>
+
+                <ul class="footer__socialList">
+                    <li class="footer__redes">
+                        <a target="_blank" aria-label="Redes Sociais"
+                            href="https://www.instagram.com/la.medic.rio/"><img
+                                src="./assets/imagens/socials/instagram.svg" alt="icone de redes sociais"></a>
+                    </li>
+                    <li class="footer__redes">
+                        <a target="_blank" aria-label="Redes Sociais" href="mailto:comercial@lamedicrio.com"><img
+                                src="./assets/imagens/socials//email.png" alt="icone de redes sociais"></a>
+                    </li>
+                    <li class="footer__redes">
+                        <a target="_blank" aria-label="Redes Sociais"
+                            href="https://www.linkedin.com/in/la-medic-rio-406495207/"><img
+                                src="./assets/imagens/socials/linkedin.svg" alt="icone de redes sociais"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copy">
+                &copy; Copyright 2024 LA Medic Rio
+            </div>
         </div>
     </section>
 
+    <script src="./scripts/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-
-    <script src="./scripts/index.js"></script>
-
-    <!-- Start of HubSpot Embed Code -->
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44515975.js"></script>
-    <!-- End of HubSpot Embed Code -->
 </body>
 
 </html>

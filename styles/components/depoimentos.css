@@ -170,6 +170,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 20px;
     padding: 1em;
+    height: auto;
 }
 
 .depoimentos__card--topo {
@@ -242,6 +243,15 @@
     left: 0;
     transform: rotate(180deg);
     margin-left: 10px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+}
+
+.swiper-pagination-bullet{
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
 }
 
 

@@ -21,8 +21,17 @@
 }
 
 .sobre__text p {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     line-height: 1.1em;
+    margin: 1em 0;
+}
+
+.sobre__text a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--vermelho-principal);
+    border-bottom: solid var(--vermelho-secundario) 1px;
 }
 
 
