@@ -1,0 +1,115 @@
+/* página de sobre */
+.main__sobre {
+    margin-top: 2em;
+}
+
+.main__sobre img {
+    border-radius: 20px 130px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.main__sobre p {
+    margin-bottom: 20px;
+}
+
+.main__sobre--geral,
+.main__sobre--missao,
+.main__sobre--qualidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* GERAL */
+.main__sobre--geral div {
+    width: 40%;
+}
+
+.main__sobre--geral div:nth-child(1) {
+    width: 55%;
+}
+
+
+
+/* MISSAO */
+
+.main__sobre--missao {
+    margin-top: 60px;
+}
+
+.main__sobre--missao h2 {
+    margin-bottom: 20px;
+}
+
+.main__sobre--missao img {
+    border-radius: 130px 20px;
+}
+
+.main__sobre--missao div {
+    width: 40%;
+}
+
+.main__sobre--missao div:nth-child(2) {
+    width: 55%;
+}
+
+/* VALORES */
+.main__sobre--valores{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.cards__valores {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards__valores div {
+    width: 25%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--vermelho-principal);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
+}
+
+.cards__valores div:nth-child(1){
+    border-radius: 50px 20px ;
+}
+.cards__valores div:nth-child(3){
+    border-radius: 20px 50px ;
+}
+
+.cards__valores h2 {
+    color: aliceblue;
+    font-size: 1.4em;
+}
+
+/* QUALIDADE DE VIDA */
+.main__sobre--qualidade{
+    margin-top: 100px;
+    align-items: flex-start;
+}
+
+.main__sobre--qualidade h2{
+    margin-bottom: 1em;
+}
+
+.main__sobre--qualidade div {
+    width: 40%;
+}
+
+.main__sobre--qualidade div:nth-child(1) {
+    width: 55%;
+}

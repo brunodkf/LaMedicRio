@@ -87,7 +87,7 @@
 }
 .especialidades__card ul {
     margin-top: 1em;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 .especialidades__card li {
@@ -111,7 +111,7 @@
 .especialidades__container p {
     margin-top: 1em;
     text-align: center;
-    font-size: 1em;
+    font-size: 1.125em;
     font-weight: 500;
     color: var(--preto-principal);
 }
@@ -120,7 +120,6 @@
 .especialidades__cards--swiper{
     overflow: visible;
     margin: 10px;
-
 }
 
 

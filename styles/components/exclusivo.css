@@ -154,6 +154,7 @@
     position: relative;
     padding-bottom: 1em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .exclusivo__card--container h3::after {

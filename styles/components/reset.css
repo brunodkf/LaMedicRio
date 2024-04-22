@@ -60,6 +60,7 @@ table {
 body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
+    line-height: 1.6;
 }
 
 h1,
@@ -78,7 +79,11 @@ h2{
 
 p {
     color: var(--preto-principal);
+    font-size: 1.125em;
+    line-height: 1.4em;
 }
+
+
 
 html {
     width: 100%;

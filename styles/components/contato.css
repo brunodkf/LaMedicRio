@@ -48,7 +48,7 @@
 }
 
 .contato__form--campo {
-    font-size: 1em;
+    font-size: 1.125em;
     padding: 0.5em;
     padding-left: 0.7em;
     border: none;
@@ -94,6 +94,6 @@
         max-width: 230px;
         margin-top: 2em;
         padding: 1em;
-        font-size: 1em;
+        font-size: 1.125em;
     }
 }

@@ -101,6 +101,15 @@ const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
       nextEl: '.depoimentos-button-next',
       prevEl: '.depoimentos-button-prev',
     },
+    // breakpoints: {
+    //   700: {
+    //     slidesPerView: 3,
+    //     spaceBetween: 50,
+    //   },
+    //   1024: {
+    //     slidesPerView: 2,
+    //   },
+    // },
 
 });
 

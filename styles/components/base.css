@@ -6,9 +6,11 @@
     /* --vermelho-principal: #CF1A22; */
     --vermelho-principal: #750b0b;
     --vermelho-secundario: #b31f1f;
-    --preto-principal: #2B3A3C;
+    --preto-principal: #2C3A3D;
     --fonte-principal: 'Open Sans';
 }
+
+
 
 @font-face {
     font-family: 'Bozon';
@@ -23,7 +25,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     width: 90%;
     margin: 0 auto;
     user-select: none;
