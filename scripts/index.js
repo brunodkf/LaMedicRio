@@ -84,32 +84,35 @@ const swiperEspecialidades = new Swiper('.especialidades__cards--swiper', {
 });
 
 
-const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
-    // Optional parameters
-    slidesPerView: 2,
-    centeredSlides: true,
-    direction: 'horizontal',
-    spaceBetween: 30,
-    loop: true,
+// const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
+//     slidesPerView: 2,
+//     centeredSlides: true,
+//     direction: 'horizontal',
+//     spaceBetween: 30,
+//     loop: true,
   
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.depoimentos-button-next',
-      prevEl: '.depoimentos-button-prev',
-    },
-    // breakpoints: {
-    //   700: {
-    //     slidesPerView: 3,
-    //     spaceBetween: 50,
-    //   },
-    //   1024: {
-    //     slidesPerView: 2,
-    //   },
-    // },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+
+//     navigation: {
+//       nextEl: '.depoimentos-button-next',
+//       prevEl: '.depoimentos-button-prev',
+//     },
+// });
+
+const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
+  slidesPerView: 1,
+  autoplay: true,
+  centeredSlides: true,
+  spaceBetween: 30,
+
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+
 
 });
 
