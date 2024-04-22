@@ -137,7 +137,7 @@
 
 
 .exclusivo__card--container {
-    padding: 1.3em;
+    padding: 1.2em;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -174,6 +174,27 @@
 .exclusivo__card--container p {
     line-height: 1.4em;
     padding-bottom: 1em;
+}
+
+.exclusivo__card--container a {
+    max-width: 80%;
+    text-decoration: none;
+    color: var(--vermelho-secundario);
+    font-weight: 600;
+
+
+    background: linear-gradient(to right, var(--branco-secundario), var(--branco-secundario)), linear-gradient(to right, var(--botao-vermelho), var(--botao-vermelho), var(--botao-vermelho));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    background-position-y: 24px;
+    padding-bottom: 10px;
+}
+
+.exclusivo__card--container a:hover{
+    transition: ease-in .4s;
+    background-size: 0 3px, 78% 3px;
 }
 
 

@@ -1,6 +1,6 @@
 /* página de sobre */
 .main__sobre {
-    margin-top: 2em;
+    margin: 4em auto;
 }
 
 .main__sobre img {
@@ -55,12 +55,13 @@
 }
 
 /* VALORES */
-.main__sobre--valores{
+.main__sobre--valores {
     width: 100%;
     margin: 0 auto;
     margin-top: 100px;
     text-align: center;
 }
+
 .cards__valores {
     margin: 0 auto;
     margin-top: 80px;
@@ -81,14 +82,15 @@
     background-color: var(--vermelho-principal);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    
+
 }
 
-.cards__valores div:nth-child(1){
-    border-radius: 50px 20px ;
+.cards__valores div:nth-child(1) {
+    border-radius: 50px 20px;
 }
-.cards__valores div:nth-child(3){
-    border-radius: 20px 50px ;
+
+.cards__valores div:nth-child(3) {
+    border-radius: 20px 50px;
 }
 
 .cards__valores h2 {
@@ -97,12 +99,12 @@
 }
 
 /* QUALIDADE DE VIDA */
-.main__sobre--qualidade{
+.main__sobre--qualidade {
     margin-top: 100px;
     align-items: flex-start;
 }
 
-.main__sobre--qualidade h2{
+.main__sobre--qualidade h2 {
     margin-bottom: 1em;
 }
 
@@ -112,4 +114,52 @@
 
 .main__sobre--qualidade div:nth-child(1) {
     width: 55%;
+}
+
+
+.contato__sobre {
+    position: relative;
+    overflow-x: clip;
+    background-color: var(--vermelho-principal);
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+.contato__sobre::before {
+    top: -2em;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 10em;
+    width: calc(100% + 50em);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: var(--vermelho-principal);
+    border-radius: 50%;
+}
+.contato__sobre h2{
+    padding-top: 30px;
+}
+
+.contato__sobre h2, .contato__sobre p {
+    color: var(--branco-secundario);
+    margin-bottom: 1em;
+}
+
+.contato__sobre a{
+    text-decoration: none;
+    background-color: var(--branco-secundario);
+    color: var(--vermelho-principal);
+    padding: .6em 4em;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    font-weight: 600;
+}
+.contato__sobre a:hover{
+    transition: ease-in-out .5s;
+    background-color: var(--vermelho-principal);
+    color: var(--branco-secundario);
+    border: solid .5px var(--branco-secundario);
+    transform: rotate(20deg);
 }
