@@ -222,7 +222,6 @@
         </div>
     </section>
 
-
     <section class="depoimentos" id="depoimentos">
         <div class=" depoimentos__container">
             <div class="depoimentos__text">
@@ -284,7 +283,7 @@
                     <div class="swiper-slide depoimentos__card">
                         <div class="depoimentos__card--topo">
                             <h3>RODRIGUES, JULIA</h3>
-                            <small>Cirurgiã Geral</small>
+                            <small>Secretaria</small>
 
                             <ul>
                                 <li><img src="./assets/imagens/estrela.webp" alt="#"></li>
@@ -332,6 +331,9 @@
                 <div class="depoimentos-button-next">
                     <img src="./assets/imagens/seta.png" alt="seta">
                 </div>
+
+
+              
             </div>
 
 
@@ -339,26 +341,86 @@
         </div>
     </section>
 
+    <section class="produtos">
+        <div class="produtos__container container">
+            <span class="produtos__tag">Produtos</span>
+            <h2>Saiba mais sobre nossos produtos!</h2>
+            <ul class="produtos__cards">
+                <li class="produtos__item">
+                    <div class="produtos__imagem--container">
+                        <img class="produtos__imagem" src="./assets/imagens/produtos/tela_inorganica.webp"
+                            alt="tela_inorganica">
+                    </div>
+
+                    <h3 class="produtos__titulo">Tela Inorgânica</h3>
+                </li>
+                <li class="produtos__item">
+                    <div class="produtos__imagem--container">
+                        <img class="produtos__imagem" src="./assets/imagens/produtos/produtosHome/loneStar.webp"
+                            alt="tela_inorganica">
+                    </div>
+
+                    <h3 class="produtos__titulo">Afastador cirúrgico</h3>
+                </li>
+                <li class="produtos__item">
+                    <div class="produtos__imagem--container">
+                        <img class="produtos__imagem" src="./assets/imagens/produtos/produtosHome/evacuador.webp"
+                            alt="tela_inorganica">
+                    </div>
+
+                    <h3 class="produtos__titulo">Evacuador de Ellik</h3>
+                </li>
+                <li class="produtos__item">
+                    <div class="produtos__imagem--container">
+                        <img class="produtos__imagem" src="./assets/imagens/produtos/produtosHome/pó.webp"
+                            alt="tela_inorganica">
+                    </div>
+
+                    <h3 class="produtos__titulo">Pó Hemostático</h3>
+                </li>
+      
+            </ul>
+
+            <p class="produtos__text">Temos muito orgulho de trabalhar com
+                produtos inovadores e que trazem resultados superiores. <a href="produtos.html">Conheça agora</a></p>
+        </div>
+    </section>
+
     <section class="contato" id="contato">
         <div class="contato__container container">
-            <h2>Entre em contato e peça já o seu orçamento!</h2>
+            <h2>Entre em contato e faça já o seu orçamento!</h2>
 
-            <form class="contato__form">
-                <label for="firstname">Nome : </label>
-                <input placeholder="Nome" class="contato__form--campo" type="text" name="firstname" required>
-                <br>
-                <label for="phone">Telefone : </label>
-                <input placeholder="(xx) xxxxx-xxxx" class="contato__form--campo" type="tel" name="phone" required>
-                <br>
-                <label for="email">Email : </label>
-                <input placeholder="exemplo@email.com" class="contato__form--campo" type="email" name="email" required>
-                <br>
-                <label for="message">Mensagem : </label>
-                <textarea placeholder="Fique a vontade para descrever aquilo que mais lhe interessa!"
-                    class="contato__form--campo" name="message" type="text" required cols="30" rows="10"></textarea>
-                <br>
-                <input class="contato__form--submit" type="submit" value="Enviar">
-            </form>
+            <div class="contato__content">
+                <form class="contato__form">
+
+                    <p></p>
+
+                    <label for="firstname">Nome : </label>
+                    <input placeholder="Nome" class="contato__form--campo" type="text" name="firstname" required>
+                    <br>
+                    <label for="phone">Telefone : </label>
+                    <input placeholder="(xx) xxxxx-xxxx" class="contato__form--campo" type="tel" name="phone" required>
+                    <br>
+                    <label for="email">Email : </label>
+                    <input placeholder="exemplo@email.com" class="contato__form--campo" type="email" name="email" required>
+                    <br>
+                    <label for="message">Mensagem : </label>
+                    <textarea placeholder="Fique a vontade para descrever aquilo que mais lhe interessa!"
+                        class="contato__form--campo" name="message" type="text" required cols="30" rows="10"></textarea>
+                    <br>
+
+                    <div>
+                        <input type="checkbox" id="privacy" name="privacy" />
+                        <label for="privacy">Ao concordar, nossa empresa poderá enviar comunicações e conteúdos de acordo com seus interesses. Você pode modificar as suas permissões de dados a qualquer momento em nossa <a href="#">Política de Privacidade</a>.</label>
+                    </div>
+                   
+                    <input class="contato__form--submit" type="submit" value="Enviar">
+                </form>
+    
+                <div class="contato__hero">
+                    <img src="./assets/imagens/HeroDoutor.webp" alt="">
+                </div>
+            </div>
         </div>
     </section>
 

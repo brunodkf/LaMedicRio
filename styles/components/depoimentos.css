@@ -4,14 +4,14 @@
     background: #9b1b1b;
     background: linear-gradient(180deg, #9b1b1b 0%, #80131c 61%, #69010a 98%);
     margin-top: 10em;
-    margin-bottom: 10em;
+    margin-bottom: 7em;
     position: relative;
     overflow-x: clip;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
     user-select: none; 
 }
 
-/* .depoimentos::before {
+.depoimentos::before {
     top: -2em;
     content: "";
     display: inline-block;
@@ -24,8 +24,22 @@
     transform: translateX(-50%);
     z-index: -1;
     background-color: #9b1b1b;
-} */
-.depoimentos::before {
+}
+.depoimentos::after {
+    bottom: -2em;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 10em;
+    width: calc(100% + 50em);
+    border-radius: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+    background-color: #69010a;
+}
+/* .depoimentos::before {
     content: '';
     display: block;
     position: absolute;
@@ -51,7 +65,7 @@
     background-image: radial-gradient(#ffffff 2.5px, #ff000000 2px);
     background-size: 40px 40px;
 
-}
+} */
 
 .depoimentos__container {
     max-width: 1200px;
@@ -344,14 +358,7 @@
     .depoimentos__decoration--swiper {
 
         width: 80%;
-        padding: 0em;
-        margin: 5em 0;
-        margin-top: 20px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: visible;
+       
      
     }
 

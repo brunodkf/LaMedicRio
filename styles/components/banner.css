@@ -40,6 +40,7 @@
 .banner__content{
     position: relative;
     z-index: 2;
+    padding: 3em 0;
 }
 /* .banner__content {
     width: 100%;
@@ -138,27 +139,36 @@
 
 .banner__socials {
     width: 50px;
-    height: 180px;
-    border: solid 3px var(--botao-vermelho);
-    border-right: none;
-    border-radius: 20px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
+    height: auto;
     position: absolute;
     right: 0;
     top: 36%;
-    overflow: hidden;
+    /* overflow: hidden; */
     animation: inSocial 1s;
 }
-.banner__socials:hover{
-    border: solid 3px var(--vermelho-principal);
+.banner__socials::before{
+    content: '';
+    width: 3px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    border-radius: 10px;
+    background-color: #EDEDED;
 }
-.banner__socials:hover .banner__socialList{
-    background-color: var(--vermelho-principal);
-    transition: ease .3s;
+.banner__socials::after{
+    content: '';
+    width: 3px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    background-color: #EDEDED;
+ 
 }
 .banner__socialList {
-    background-color: rgba(0, 0, 0, 0.301);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -176,15 +186,18 @@
     background-size: cover;
     display: inline-block;
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 10px;
+    width: 25px;
+    height: 25px;
+    left: 13px;
 }
 .banner__redes:nth-child(1) span {
     background-image: url(./../../assets/imagens/socials/instagram.svg);
 }
 .banner__redes:nth-child(2) span {
     background-image: url(./../../assets/imagens/socials/email.png);
+    width: 23px;
+    margin-left: 1px;
+    height: 23px;
 }
 .banner__redes:nth-child(3) span {
     background-image: url(./../../assets/imagens/socials/linkedin.svg);

@@ -1,0 +1,104 @@
+.produtos {
+    margin-bottom: 7em;
+}
+
+.produtos__tag {
+    font-weight: 600;
+    color: var(--vermelho-principal);
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: 'Bozon Bold';
+    position: relative;
+    margin-top: 1.5em;
+    margin-left: 23px;
+}
+
+.produtos__tag::before {
+    content: '';
+    width: 10px;
+    height: 2.2px;
+    border-radius: 20px;
+    top: 45%;
+    left: -20px;
+    display: block;
+    position: absolute;
+    background-color: var(--vermelho-principal);
+}
+
+.produtos__tag::after {
+    content: '';
+    width: 4px;
+    height: 2.2px;
+    border-radius: 50%;
+    top: 45%;
+    left: -8px;
+    display: block;
+    position: absolute;
+    background-color: var(--vermelho-principal);
+}
+
+.produtos__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4em;
+}
+
+.produtos__item {
+    width: 20%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.produtos__imagem--container{
+    width: 230px;
+    height: 220px;
+    background-color:#d00c0c87; 
+    border-radius: 50%;
+    position: relative;
+}
+
+.produtos__imagem{
+    width: 90%;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /* background-color: #d00c0c87; */
+}
+
+.produtos__item:hover .produtos__imagem{
+    transform: translateY(-30px);
+    transition: ease-in .2s;
+    filter: drop-shadow(5px 1px 14px #0000005d);
+}
+
+.produtos__item:hover .produtos__imagem--container{
+    transition: ease-in .2s;
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    background-color: #d00c0c87;
+    border-radius: 50%;
+}
+
+
+.produtos__titulo{
+    text-align: center;
+    
+}
+
+.produtos__text{
+    margin-top: 3em;
+}
+
+.produtos__text a{
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--vermelho-principal);
+}

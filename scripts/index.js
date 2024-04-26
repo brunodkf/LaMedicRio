@@ -111,7 +111,8 @@ const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
   pagination:{
     el: ".swiper-pagination",
     clickable: true,
-  }
+  },
+
 
 
 });

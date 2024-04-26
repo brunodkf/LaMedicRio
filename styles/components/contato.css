@@ -1,12 +1,16 @@
 .contato {
-    background-color: #69010a;
+    margin: 0 auto;
+    background: #9b1b1b;
+    background: linear-gradient(180deg, #9b1b1b 0%, #80131c 61%, #69010a 98%);
+    margin-top: 10em;
+    margin-bottom: 7em;
     position: relative;
     overflow-x: clip;
-    z-index: 2;
+    user-select: none;
 }
 
 .contato::before {
-    top: 19em;
+    top: -2em;
     content: "";
     display: inline-block;
     position: absolute;
@@ -17,7 +21,7 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     z-index: -1;
-    background-color: #69010a;
+    background-color: #9b1b1b;
 }
 
 
@@ -28,12 +32,17 @@
 .contato__container h2 {
     text-align: center;
     color: var(--branco-principal);
-    margin-bottom: 1.5em;
+    padding: 2em 0;
+}
+
+.contato__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .contato__form {
-    width: 80%;
-    margin: 0 auto;
+    width:45%;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -45,6 +54,13 @@
     font-weight: 600;
     letter-spacing: .8px;
     font-family: "Bozon";
+}
+
+.contato__form label a{
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: solid 1px;
 }
 
 .contato__form--campo {
@@ -72,10 +88,14 @@
     background: linear-gradient(10deg, #ea2626 0%, #cf1a22 100%);
 }
 
+.contato__hero{
+    width: 45%;
+}
 
 
 
-@media screen and (max-width: 900px){
+
+@media screen and (max-width: 900px) {
     .contato__form {
         width: 100%;
         margin: 0 auto;
