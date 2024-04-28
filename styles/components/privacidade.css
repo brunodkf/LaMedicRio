@@ -1,0 +1,54 @@
+.privacidade__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.privacidade__text, .privacidade__decoration{
+    width: 50%;
+}
+
+.privacidade__text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.privacidade__text a{
+    max-width: 150px;
+}
+
+.privacidade__text img{
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+.privacidade__decoration{
+    height: 100vh;
+    background-color: var(--vermelho-principal);
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.privacidade__decoration img{
+    width: 70%;
+}
+
+.privacidade__text h2, .privacidade__text h3{
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.privacidade__text p{
+    margin-bottom: 1.5em;
+    width: 90%;
+}
+
+.privacidade__text ul{
+    width: 80%;
+    list-style: disc;
+}

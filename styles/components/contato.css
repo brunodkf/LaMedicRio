@@ -27,13 +27,67 @@
 
 .contato__container {
     padding-bottom: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contato__container h2 {
     text-align: center;
     color: var(--branco-principal);
-    padding: 2em 0;
+    padding-top: 10px;
 }
+.contato__container h2::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    background: var(--branco-secundario);
+    height: 0.15em;
+    border-radius: 1em;
+    width: 2em;
+}
+
+.contato__container p{
+    text-align: center;
+    color: var(--branco-principal);
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+.contato__tag {
+    font-weight: 600;
+    color: var(--branco-principal);
+    text-transform: uppercase;
+    font-family: 'Bozon Bold';
+    position: relative;
+    margin-top: 1.5em;
+}
+
+.contato__tag::before {
+    content: '';
+    width: 10px;
+    height: 2.2px;
+    border-radius: 20px;
+    top: 45%;
+    left: -20px;
+    display: block;
+    position: absolute;
+    background-color: var(--branco-principal);
+
+}
+
+.contato__tag::after {
+    content: '';
+    width: 4px;
+    height: 2.2px;
+    border-radius: 50%;
+    top: 45%;
+    left: -8px;
+    display: block;
+    position: absolute;
+    background-color: var(--branco-principal);
+}
+
 
 .contato__content{
     display: flex;

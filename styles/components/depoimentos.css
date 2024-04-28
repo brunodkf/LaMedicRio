@@ -82,7 +82,7 @@
     font-weight: 600;
     color: var(--branco-principal);
     text-transform: uppercase;
-    font-size: .8em;
+    /* font-size: .8em; */
     font-family: 'Bozon Bold';
     position: relative;
     margin-top: 1.5em;

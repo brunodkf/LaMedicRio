@@ -116,14 +116,17 @@
     color: var(--preto-principal);
 }
 
+.especialidades__container a{
+    text-decoration: none;
+    color: var(--vermelho-principal);
+    font-weight: 600;
+}
+
 
 .especialidades__cards--swiper{
     overflow: visible;
     margin: 10px;
 }
-
-
-
 
 .swiper-button-next:after, .swiper-button-prev:after{
     font-size: 1.2em;
