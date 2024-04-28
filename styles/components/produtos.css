@@ -86,10 +86,8 @@
 
 .produtos__item:hover .produtos__imagem--container {
     transition: ease-in .2s;
-    width: 200px;
-    height: 190px;
     margin: 0 auto;
-    background-color: #d00c0c87;
+    background-color: #d00c0cb6;
     border-radius: 50%;
 }
 

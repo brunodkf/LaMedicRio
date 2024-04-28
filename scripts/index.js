@@ -7,7 +7,7 @@ button.addEventListener('click', function () {
   navMenu.classList.toggle('active');
 
   const someBarra = () => {
-    if (window.scrollY >= 400) {
+    if (window.scrollY >= 500) {
       navMenu.classList.remove('active');
       document.querySelector('#checkbox-menu').checked = false;
     }

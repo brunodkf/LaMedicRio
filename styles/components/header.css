@@ -153,7 +153,7 @@
     align-items: center;
 } */
 
-.menu.active {
+/* .menu.active {
     display: flex !important;
     position: absolute !important;
     height: calc(100vh) !important;
@@ -168,14 +168,31 @@
     padding: 20px;
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     background-color: #ededed;
+} */
+
+nav.menu.active{   
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 3em;
+    overflow-y: auto;
+    z-index: 99999;
+    background-color: #ededed;
 }
 
 .menu.active ul {
     width: 100%;
-    height: calc(100% - 20%);
+    height: calc(100vh - 20%);
+    
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .menu.active ul li {
@@ -190,6 +207,7 @@
 
 .menu.active a {
     color: #2B3A3C;
+    
 }
 
 .menu.active li:nth-last-child(1) {
@@ -204,6 +222,8 @@
     justify-content: center;
     display: none;
     padding-right: 10px;
+    z-index: 99999;
+
 }
 
 #checkbox-menu {
@@ -262,7 +282,7 @@
 
 
 /*----------------- HAMBURGUER END ----------------- */
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     nav.menu {
         display: none;
     }
