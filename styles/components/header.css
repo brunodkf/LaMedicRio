@@ -169,6 +169,9 @@
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     background-color: #ededed;
 } */
+.menu{
+    animation: appear 2s;
+}
 
 nav.menu.active{   
     display: block;
@@ -183,8 +186,26 @@ nav.menu.active{
     overflow-y: auto;
     z-index: 99999;
     background-color: #ededed;
+    animation: appear .3s;
 }
-
+@keyframes appear {
+    0%{
+        opacity: .2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes scale-in-center{
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
 .menu.active ul {
     width: 100%;
     height: calc(100vh - 20%);
@@ -192,6 +213,7 @@ nav.menu.active{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    animation: scale-in-center .3s;
 
 }
 
