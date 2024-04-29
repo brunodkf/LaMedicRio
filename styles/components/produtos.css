@@ -99,6 +99,25 @@
     bottom: 0;
 
 }
+.produtos__description{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.produtos__description p{
+    text-align: center;
+    font-size: 1em;
+    padding: .5em;
+}
+
+.produtos__description a{
+    text-decoration: none;
+    color: var(--botao-vermelho);
+    font-weight: 500;
+}
 
 .produtos__text {
     margin-top: 3em;
@@ -109,3 +128,78 @@
     text-decoration: none;
     color: var(--vermelho-principal);
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .produtos__cards {
+        grid-template-columns: 100%;
+        gap: 50px;
+    }
+    .produtos__item {
+        width: 100%;
+        height: 220px;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: var(--branco-principal);
+        border: solid 1px var(--botao-vermelho);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .produtos__item:hover .produtos__imagem--container {
+        transition: ease-in .2s;
+        margin: 0 auto;
+        background-color: #d00c0cb6;
+        border-radius: 0px;
+    }
+    .produtos__item:hover .produtos__imagem {
+        transform: translateY(0px);
+        transition: ease-in .2s;
+        filter: drop-shadow(5px 1px 14px #0000005d);
+    }
+    
+    .produtos__imagem--container {
+        width: 50%;
+        height: auto;
+        background-color: #d00c0cb6;
+        border-radius: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produtos__description {
+        width: 65%;
+    }
+
+    .produtos__titulo {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+        margin-top:10px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 798px){
+  
+}
+
+/* @media screen and (min-width: 799px) and (max-width: 1024px){
+    
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+} */

@@ -22,7 +22,6 @@ button.addEventListener('click', function () {
 
 
 
-
 // Mostra botão após 50% da página
 const backToTop = document.querySelector('.topo__button');
 
@@ -90,7 +89,7 @@ const swiperEspecialidades = new Swiper('.especialidades__cards--swiper', {
 //     direction: 'horizontal',
 //     spaceBetween: 30,
 //     loop: true,
-  
+
 //     pagination: {
 //       el: ".swiper-pagination",
 //       clickable: true,
@@ -102,13 +101,13 @@ const swiperEspecialidades = new Swiper('.especialidades__cards--swiper', {
 //     },
 // });
 
-const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper',{
+const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper', {
   slidesPerView: 1,
   autoplay: true,
   centeredSlides: true,
   spaceBetween: 30,
 
-  pagination:{
+  pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
