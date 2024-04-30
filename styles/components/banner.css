@@ -183,7 +183,8 @@
 }
 .banner__redes span {
     content: "";
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
     width: 25px;
@@ -191,16 +192,16 @@
     left: 13px;
 }
 .banner__redes:nth-child(1) span {
-    background-image: url(./../../assets/imagens/socials/instagram.svg);
+    background-image: url(./../../assets/imagens/socials/igIcon.webp);
 }
 .banner__redes:nth-child(2) span {
-    background-image: url(./../../assets/imagens/socials/email.png);
+    background-image: url(./../../assets/imagens/socials/mailIcon.webp);
     width: 23px;
     margin-left: 1px;
     height: 23px;
 }
 .banner__redes:nth-child(3) span {
-    background-image: url(./../../assets/imagens/socials/linkedin.svg);
+    background-image: url(./../../assets/imagens/socials/linkedinIcon.webp);
 }
 
 .banner__redes span:hover{
