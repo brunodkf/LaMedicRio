@@ -28,8 +28,8 @@
 
 .sobre__text a{
     text-decoration: none;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.125em;
+    font-weight: 600;
     color: var(--vermelho-principal);
     border-bottom: solid var(--vermelho-secundario) 1px;
 }
@@ -56,5 +56,25 @@
 
     .sobre__imagem img {
         width: 60%;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px){
+    .sobre__text {
+        width: 60%;
+    }
+    .sobre__text p {
+        margin-top: 1em;
+        line-height: 1.4em;
+    }
+
+    .sobre__imagem {
+        width: 40%;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .sobre__imagem img {
+        width: 70%;
     }
 }
