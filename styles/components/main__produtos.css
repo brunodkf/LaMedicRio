@@ -1,0 +1,48 @@
+.main__produtos {
+    margin-top: 2em;
+}
+
+.loneStar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.trecho {
+    width: 50%;
+}
+
+.loneStar--image {
+    display: flex;
+    position: relative;
+}
+
+.loneStar--image img {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 1;
+    filter: drop-shadow(5px 1px 14px #0000005d);
+}
+
+.loneStar--image::before {
+    content: '';
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+    background-color: var(--vermelho-background);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.loneStar--text h2{
+    margin-bottom: 1em;
+}
+.loneStar--text p{
+    margin-bottom: 1em;
+}

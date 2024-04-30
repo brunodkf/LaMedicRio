@@ -36,6 +36,7 @@
   padding: 2em 1em;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   animation: scroll 30s infinite linear;
 }
 
