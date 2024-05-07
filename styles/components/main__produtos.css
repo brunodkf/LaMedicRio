@@ -2,16 +2,73 @@
     margin-top: 2em;
 }
 
+.trecho {
+    width: 50%;
+}
+
+.trecho__cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.trecho figure {
+    width: min(100% - 15px, 200px);
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: clip;
+    position: relative;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.trecho img {
+    margin: 0 auto;
+}
+
+.trecho figcaption {
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.trecho small{
+    width: 100%;
+    display: block;
+    line-height: 13px;
+}
+
+.fios{
+    margin-top: 3em;
+}
+.tela, .alcas{
+    flex-direction: row-reverse;
+}
+
+.text__produtos p{
+    margin-bottom: 2em;
+}
+
+.faixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4em;
+}
+
+
+
 .loneStar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 3em;
+    margin-bottom: 6em;
 }
 
-.trecho {
-    width: 50%;
-}
+
 
 .loneStar--image {
     display: flex;
@@ -40,9 +97,10 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.loneStar--text h2{
+.loneStar--text h2 {
     margin-bottom: 1em;
 }
-.loneStar--text p{
+
+.loneStar--text p {
     margin-bottom: 1em;
 }

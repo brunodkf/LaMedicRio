@@ -125,7 +125,8 @@
 }
 
 .produtos__text {
-    margin-top: 3em;
+    margin: 2em auto;
+    text-align: center;
 }
 
 .produtos__text a {
@@ -135,8 +136,9 @@
 }
 
 .produtos__link {
-    width: 80%;
+    max-width: 300px;
     margin: 0 auto;
+    display: block;
     margin-top: 2em;
     padding: .5em;
     border-radius: 30px;
@@ -145,7 +147,6 @@
     text-decoration: none;
     background-color: var(--botao-vermelho);
     color: var(--branco-principal);
-    display: none;
 }
 
 
