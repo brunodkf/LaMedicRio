@@ -248,4 +248,7 @@
     .trecho figure small{
       display: none;
     }
+    .trecho figure div {
+        padding: .5em;
+    }
 }
