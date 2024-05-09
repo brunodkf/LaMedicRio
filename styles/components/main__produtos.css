@@ -219,3 +219,33 @@
 .chamada__text{
     margin-bottom: 2em;
 }
+
+
+@media screen and (max-width: 500px) {
+    .trecho{
+        width: 100%;
+    }
+    .loneStar{
+        flex-direction: column;
+    }
+    .loneStar--text h2 {
+    text-align: center;
+    }
+    .tag{
+        margin-left: 2em;
+    }
+    .faixa {
+        padding: 2em 3em;
+        flex-direction: column;
+    }
+    .trecho figure{
+        max-height: 170px;
+        justify-content: flex-start;
+    }
+    .trecho figcaption{
+        padding: 1em 0;
+    }
+    .trecho figure small{
+      display: none;
+    }
+}

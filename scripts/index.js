@@ -95,19 +95,3 @@ const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper', {
   },
 
 });
-
-
-// Verifique se o usuário já aceitou os cookies
-// if (localStorage.getItem('cookieAccepted')) {
-//   document.getElementById('cookieContainer').style.display = 'none';
-// }
-
-// Função para aceitar os cookies
-// const cookiebtn = document.querySelector('#cookieContainer');
-// cookiebtn.addEventListener('click',()=>{
-//   console.log('FUNCIONA MESMO')
-//   localStorage.setItem('cookieAccepted', true);
-//   document.getElementById('cookieContainer').style.display = 'none';
-// })
-
-
