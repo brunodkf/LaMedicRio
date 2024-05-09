@@ -33,3 +33,8 @@
     color: var(--branco-principal);
     font-size: .7em;
 }
+
+.footer__copy a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
