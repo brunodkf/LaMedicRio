@@ -235,7 +235,7 @@
         margin-left: 2em;
     }
     .faixa {
-        padding: 2em 3em;
+        padding: 0em 3em;
         flex-direction: column;
     }
     .trecho figure{
