@@ -18,9 +18,9 @@
     <link rel="shortcut icon" href="./assets/imagens/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/style.css">
-      <!-- Start of HubSpot Embed Code -->
-      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44515975.js"></script>
-      <!-- End of HubSpot Embed Code -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44515975.js"></script>
+    <!-- End of HubSpot Embed Code -->
 </head>
 
 <body>
@@ -124,12 +124,14 @@
                         principais nos procedimentos de RTU (Ressecção transuretral da próstata).</p>
                 </div>
                 <div>
-                    <img src="./assets/imagens/equipeLAmedic.jpg" alt="Equipe LA Medic">
+                    <img src="./assets/imagens/equipeLAmedic.jpg" alt="Equipe LA Medic" id="about_img"
+                    data-target-img>
                 </div>
             </div>
             <div class="main__sobre--missao">
                 <div>
-                    <img src="./assets/imagens/equipeLAmedicLuis.jpeg" alt="Equipe LAmedic Luis">
+                    <img src="./assets/imagens/equipeLAmedicLuis.jpeg" alt="Equipe LAmedic Luis" id="about_img"
+                    data-target-img>
                 </div>
                 <div>
                     <h2>Nossa Missão</h2>
@@ -149,26 +151,30 @@
                 </div>
             </div>
             <div class="main__sobre--valores">
-                <p>
-                    A LA Medic Rio é uma empresa comprometida, por princípio, com a qualidade
-                    e o aprimoramento nos aspectos de saúde, segurança, bem-estar e meio
-                    ambiente, relativos a seu quadro de pessoas, produtos e processos.
-                </p>
-                <div class="cards__valores">
-                    <div>
-                        <h2>Trabalho em Equipe</h2>
-                    </div>
-                    <div>
-                        <h2>Coragem</h2>
-                    </div>
-                    <div>
-                        <h2>Inovação</h2>
-                    </div>
+                <div>
+                    <p>
+                        A LA Medic Rio é uma empresa comprometida, por princípio, com a qualidade
+                        e o aprimoramento nos aspectos de saúde, segurança, bem-estar e meio
+                        ambiente, relativos a seu quadro de pessoas, produtos e processos.
+                    </p>
+                    <p>Tendo como seus principais objetivos a satisfação de seus clientes e a
+                        valorização dos colaboradores e da sociedade civil, a área de Compliance
+                        realiza ações acerca das melhores práticas de integridade e a constante
+                        vigilância sobre a aplicação dessas práticas.</p>
                 </div>
-                <p>Tendo como seus principais objetivos a satisfação de seus clientes e a
-                    valorização dos colaboradores e da sociedade civil, a área de Compliance
-                    realiza ações acerca das melhores práticas de integridade e a constante
-                    vigilância sobre a aplicação dessas práticas.</p>
+
+                <ul>
+                    <li>
+                        <h2>✔️ Trabalho em Equipe</h2>
+                    </li>
+                    <li>
+                        <h2>✔️ Coragem</h2>
+                    </li>
+                    <li>
+                        <h2>✔️ Inovação</h2>
+                    </li>
+                </ul>
+
             </div>
 
             <div class="main__sobre--qualidade">
@@ -181,9 +187,12 @@
 
                     <p>Temos muito orgulho de trabalhar com
                         produtos inovadores e que trazem resultados superiores.</p>
+
+
                 </div>
                 <div>
-                    <img src="./assets/imagens/equipeLAmedicDupla.jpeg" alt="Equipe LA Medic">
+                    <img src="./assets/imagens/equipeLAmedicDupla.jpeg" alt="Equipe LA Medic" id="about_img"
+                        data-target-img>
                 </div>
             </div>
         </div>
@@ -242,10 +251,8 @@
     </footer>
 
 
-    <script src="./scripts/index.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
+    <script src="./scripts/index.js" type="text/javascript" async defer></script>
+    <script src="./scripts/about.js" type="module" async defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
-
 </html>
