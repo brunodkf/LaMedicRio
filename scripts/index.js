@@ -54,8 +54,6 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('[data-target="exclusivo"]'))
 
 
-
-
 // Nossas Especialidades
 const swiperEspecialidades = new Swiper('.especialidades__cards--swiper', {
   // Optional parameters

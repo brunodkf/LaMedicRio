@@ -70,14 +70,29 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2em;
+    padding: 5em 1em;
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 20px;
+  
+}
+.especialidades__card.animate{
+    animation: domino .3s;
+}
+
+@keyframes domino {
+    0%{
+        opacity: .7;
+        transform: translatey(20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0%);
+    }
 }
 
 .especialidades__card img {
-    width: 50px;
+    width: 70px;
     background-color: var(--botao-vermelho);
     opacity: .9;
     padding: .5em;
@@ -88,6 +103,7 @@
 .especialidades__card ul {
     margin-top: 1em;
     font-size: .9em;
+    display: none;
 }
 
 .especialidades__card li {
@@ -120,6 +136,7 @@
     text-decoration: none;
     color: var(--vermelho-principal);
     font-weight: 600;
+    border-bottom: solid 1px;
 }
 
 
