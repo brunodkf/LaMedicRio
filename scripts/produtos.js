@@ -12,15 +12,5 @@ const swiperProdutos = new Swiper('.produtos__carrousel', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    breakpoints: {
-        600: {
-            slidesPerView: 1,
-        },
-        900: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 1,
-        },
-    },
+
 });

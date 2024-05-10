@@ -221,12 +221,18 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .main__produtos {
         margin-top: -2em;
     }
     .trecho{
         width: 100%;
+    }
+    .trecho__cards {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2em;
     }
     .loneStar{
         flex-direction: column;
@@ -254,4 +260,8 @@
     .trecho figure div {
         padding: .5em;
     }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+    
 }
