@@ -149,6 +149,14 @@
     color: var(--branco-principal);
 }
 
+.produtos__link:hover{
+    transition: ease-in .2s;
+    color: var(--botao-vermelho);
+    border: solid 1px var(--botao-vermelho);
+    font-weight: 600;
+    background-color: var(--branco-principal);
+}
+
 
 
 

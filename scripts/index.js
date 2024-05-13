@@ -96,3 +96,14 @@ const swiperDepoimentos = new Swiper('.depoimentos__decoration--swiper', {
 
 });
 
+
+
+
+// Página de Obrigado
+const formulario = document.querySelector('.contato__form');
+
+formulario.addEventListener('submit', ()=>{
+  window.location.href + 'obrigado.html';
+  console.log('ENVIADO')
+})
+
