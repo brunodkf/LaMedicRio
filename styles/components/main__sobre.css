@@ -98,7 +98,6 @@
 
 .move{
     transition: ease-in 2s;
-    animation: toUp 1s;
 }
 
 @keyframes toUp {
