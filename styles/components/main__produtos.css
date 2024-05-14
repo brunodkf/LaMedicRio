@@ -133,6 +133,7 @@
 
 .produtos__carrousel {
     width: 100%;
+    max-width: 1550px;
     height: auto;
     margin-bottom: 5em;
 }
@@ -152,19 +153,6 @@
     margin-bottom: 0px;
     padding: 2em 4em;
 }
-
-/* .implante{
-    height: 100%;
-    align-items: normal;
-}
-.implante .trecho__cards{
-    flex-direction: column;
-    align-items: center;
-}
-.implante .text__cards{
-    height: auto;
-    border: solid 1px;
-} */
 
 
 /* chamada */
