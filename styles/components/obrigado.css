@@ -1,5 +1,5 @@
 .topo__tnk{
-    background-color: var(--botao-vermelho);
+    background-color: var(--vermelho-principal);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .main__tnk--content h1{
-    color: var(--botao-vermelho);
+    color: var(--vermelho-principal);
 }
 .main__tnk--content h1::after{
     content: '';
@@ -50,7 +50,7 @@
     left: 5px;
     display: block;
     position: relative;
-    background-color: var(--botao-vermelho);
+    background-color: var(--vermelho-principal);
 }
 .main__tnk--content p{
     margin-top: 1em;
@@ -65,7 +65,7 @@
     font-family: 'Bozon';
     text-decoration: none;
     color: var(--branco-secundario);
-    background-color: var(--botao-vermelho);
+    background-color: var(--vermelho-principal);
     font-weight: 600;
     font-size: 1.225em;
     border-radius: 50px;
