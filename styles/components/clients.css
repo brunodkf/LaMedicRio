@@ -40,6 +40,9 @@
   animation: scroll 30s infinite linear;
 }
 
+.client:nth-child(1) img{
+ max-height: none;
+}
 .clients__container:hover .clients__slider {
   animation-play-state: paused;
 }
