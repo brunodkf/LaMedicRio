@@ -46,16 +46,6 @@ table {
     border-spacing: 0;
 }
 
-@font-face {
-    font-family: 'Bozon';
-    src: url(https://1555534.fs1.hubspotusercontent-na1.net/hubfs/1555534/Marketing/Desenvolvimento%202022/Bozon.otf) format('OpenType');
-}
-
-@font-face {
-    font-family: 'Bozon Bold';
-    src: url(https://1555534.fs1.hubspotusercontent-na1.net/hubfs/1555534/Marketing/Desenvolvimento%202022/Bozon_Bold.otf) format('OpenType');
-}
-
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -96,4 +86,5 @@ html {
 img{
     width: 100%;
     height: auto;
+    overflow: visible;
 }
