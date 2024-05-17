@@ -16,6 +16,62 @@
     position: relative;
     background-image: rgb(144, 17, 17);
     background-image: linear-gradient(86deg, rgba(144, 17, 17, 1) 0%, rgba(134, 14, 14, 1) 58%, rgba(101, 12, 12, 1) 98%);
+    display: none;
+}
+
+.header__before {
+    /* background-color: rgb(119, 16, 16); */
+    background-color: var(--vermelho-principal);
+}
+
+.header__before--lista {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: .650em;
+    padding: .1em 0;
+    gap: 2em;
+}
+
+.header__before--item {
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__before--item p {
+    color: var(--branco-secundario);
+}
+
+.header__before--item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: .4em;
+}
+
+.header__before--item span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    margin: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__before--item:nth-child(1) span {
+    background-image: url(./../../assets/imagens/socials/telefone.webp);
+}
+
+.header__before--item:nth-child(2) span {
+    background-image: url(./../../assets/imagens/socials/wpp.webp);
+}
+
+.header__before--item:nth-child(3) span {
+    background-image: url(./../../assets/imagens/socials/mailIcon.webp);
 }
 
 .header__container {
@@ -74,7 +130,7 @@
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
-    
+
     background-position-y: 24px;
     padding-bottom: 10px;
 }
@@ -125,56 +181,7 @@
     }
 }
 
-
-/* .menu.active {
-    display: flex !important;
-    position: absolute !important;
-    height: calc(100vh) !important;
-    top: 100px !important;
-    right: 0;
-    left: 0;
-    z-index: 1000 !important;
-    overflow-y: hidden !important;
-    overflow-x: clip;
-    border-right: 0px;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    border-bottom-left-radius: 20px;
-    padding: 20px;
-    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    background-color: #ededed;
-}
-
-.menu.active ul {
-    width: 100%;
-    height: calc(100% - 20%);
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-/* .menu.active {
-    display: flex !important;
-    position: absolute !important;
-    height: calc(100vh) !important;
-    top: 100px !important;
-    right: 0% !important;
-    z-index: 1000 !important;
-    overflow-y: hidden !important;
-    border-right: 0px;
-    border-top-right-radius: 0px !important;
-    border-bottom-right-radius: 0px !important;
-    border-bottom-left-radius: 20px;
-    padding: 20px;
-    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    background-color: #ededed;
-} */
-
-/* .menu{
-    animation: appear 2s;
-} */
-
-nav.menu.active{   
+nav.menu.active {
     display: block;
     width: 100vw;
     height: 100vh;
@@ -189,28 +196,33 @@ nav.menu.active{
     background-color: #ededed;
     animation: appear .3s;
 }
+
 @keyframes appear {
-    0%{
+    0% {
         opacity: .2;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes scale-in-center{
+
+@keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0.5);
         transform: scale(0.5);
     }
+
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
 }
+
 .menu.active ul {
     width: 100%;
     height: calc(100vh - 20%);
-    
+
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -230,7 +242,7 @@ nav.menu.active{
 
 .menu.active a {
     color: #2B3A3C;
-    
+
 }
 
 .menu.active li:nth-last-child(1) {
@@ -324,12 +336,13 @@ nav.menu.active{
     }
 }
 
-/* 
+@media screen and (max-width: 900px) {
+    .header::before {
+        display: block !important;
+    }
 
-.header__submenu {
-    background-color: var(--botao-vermelho);
-    background: var(--botao-vermelho);
-    background: linear-gradient(86deg, var(--botao-vermelho) 0%, rgba(134, 14, 14, 1) 58%, rgba(101, 12, 12, 1) 98%);
-    width: 100%;
-    height: 6px;
-} */
+    .header__before {
+        display: none;
+    }
+
+}

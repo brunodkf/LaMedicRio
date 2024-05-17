@@ -192,16 +192,13 @@
     left: 13px;
 }
 .banner__redes:nth-child(1) span {
-    background-image: url(./../../assets/imagens/socials/igIcon.webp);
+    background-image: url(./../../assets/imagens/socials/instagram.webp);
 }
 .banner__redes:nth-child(2) span {
-    background-image: url(./../../assets/imagens/socials/mailIcon.webp);
-    width: 23px;
-    margin-left: 1px;
-    height: 23px;
+    background-image: url(./../../assets/imagens/socials/zap.webp);
 }
 .banner__redes:nth-child(3) span {
-    background-image: url(./../../assets/imagens/socials/linkedinIcon.webp);
+    background-image: url(./../../assets/imagens/socials/linkedin.webp);
 }
 
 .banner__redes span:hover{
