@@ -33,6 +33,15 @@
     color: var(--branco-secundario);
     text-decoration: none;
 }
+.footer__pages p{
+    color: var(--branco-secundario);
+    font-weight: 600;
+}
+.footer__pages li:hover, .footer__pages li a:hover{
+    transition: ease-in .2s;
+    color: red;
+    cursor: pointer;
+}
 
 .footer__socialList{
     display: flex;
