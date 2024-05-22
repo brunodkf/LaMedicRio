@@ -147,6 +147,7 @@
     text-decoration: none;
     background-color: var(--botao-vermelho);
     color: var(--branco-principal);
+    border: solid 1px var(--botao-vermelho);
 }
 
 .produtos__link:hover{
