@@ -147,7 +147,7 @@
     position: relative;
 }
 
-.swiper-slide-next, .swiper-slide-prev{
+ .carrousel__produtos .swiper-slide-next,.carrousel__produtos .swiper-slide-prev{
     transition: ease-in-out .5s;
     opacity: .5;
 }
