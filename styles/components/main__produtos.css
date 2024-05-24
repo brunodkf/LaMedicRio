@@ -295,23 +295,23 @@
         margin: 0 auto;
     }
 
-    .swiper-button-next,
-    .swiper-rtl .swiper-button-prev {
+    .button__carrousel-next,
+    .swiper-rtl  .button__carrousel-prev {
         right: var(--swiper-navigation-sides-offset, -20px);
         left: auto;
     }
-    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    .button__carrousel-prev, .swiper-rtl .button__carrousel-next {
         left: var(--swiper-navigation-sides-offset, -20px);
         right: auto;
     }
 
-    .swiper-button-next::after {
+    .button__carrousel-next::after {
         padding: 4.5em 0.7em;
         border-radius: 0px;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
     }
-    .swiper-button-prev::after {
+    .button__carrousel-prev::after {
         padding: 4.5em 0.7em;
         border-radius: 0px;
         border-bottom-right-radius: 50px;
