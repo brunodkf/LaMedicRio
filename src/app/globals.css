@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand red scale */
+  --color-brand-50: #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #ef4444;
+  --color-brand-600: #dc2626;
+  --color-brand-700: #b91c1c;
+  --color-brand-800: #991b1b;
+  --color-brand-900: #7f1d1d;
+  --color-brand-950: #450a0a;
+
+  /* Typography */
+  --font-sans: var(--font-inter), "Open Sans", system-ui, sans-serif;
+  --font-brand: var(--font-bozon), "Open Sans", system-ui, sans-serif;
+}
+
+/* Marquee animation for clients strip */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Fade in for hero content */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-slate-900 bg-white;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-brand);
+  }
+}
+
+/* ── Swiper overrides ── */
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b91c1c;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b91c1c;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Dark section swiper bullets */
+.swiper-dark .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.swiper-dark .swiper-pagination-bullet-active {
+  background: #b91c1c;
+}
