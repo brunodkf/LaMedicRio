@@ -6,6 +6,7 @@ import { TopBar } from "@/components/layout/TopBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/BackToTop";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -79,6 +80,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <BackToTop />
+        <ChatWidget />
 
         {/* HubSpot CRM */}
         <Script
