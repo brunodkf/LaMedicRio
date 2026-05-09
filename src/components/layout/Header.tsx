@@ -45,7 +45,7 @@ export function Header() {
               alt="LA Médic Rio"
               width={110}
               height={55}
-              className="h-10 w-auto"
+              className="h-12 w-auto"
               priority
             />
           </Link>
@@ -98,7 +98,7 @@ export function Header() {
 
       {/* ── Mobile Menu ─ Full-screen dark overlay ── */}
       <div
-        className={`lg:hidden fixed inset-0 z-40 flex flex-col bg-slate-950 transition-opacity duration-300 ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
+        className={`lg:hidden fixed inset-0 z-40 flex flex-col bg-slate-950 transition-opacity duration-300 ${menuOpen ? "opacity-100 pointer-events-auto h-screen" : "opacity-0 pointer-events-none h-screen"}`}
         aria-hidden={!menuOpen}
       >
         {/* Top bar */}
@@ -137,7 +137,7 @@ export function Header() {
 
         {/* Nav links */}
         <nav
-          className="flex-1 flex flex-col justify-center px-6 py-8 overflow-y-auto"
+          className="flex-1 flex flex-col justify-center px-6 py-8 bg-slate-950"
           aria-label="Menu mobile"
         >
           <ul>
@@ -146,7 +146,7 @@ export function Header() {
                 <Link
                   href={link.href}
                   onClick={closeMenu}
-                  className="flex items-center justify-between py-4 border-b border-white/8 group"
+                  className="flex items-center justify-between py-6 border-b border-white/8 group"
                   style={{
                     opacity: menuOpen ? 1 : 0,
                     transform: menuOpen ? "translateY(0)" : "translateY(18px)",

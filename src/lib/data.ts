@@ -210,16 +210,18 @@ export const clients = [
     image: "/assets/imagens/clients/cliente01.webp",
     name: "Cliente 1",
   },
-  { id: 2, image: "/assets/imagens/clients/image2.webp", name: "Cliente 2" },
+  { id: 2, image: "/assets/imagens/clients/image2.webp", 
+    name: "Cliente 2" },
   {
     id: 3,
-    image: "/assets/imagens/clients/cliente03.webp",
+    image: "/assets/imagens/clients/cliente03.2.webp",
     name: "Cliente 3",
   },
-  { id: 4, image: "/assets/imagens/clients/image4.webp", name: "Cliente 4" },
+  { id: 4, image: "/assets/imagens/clients/image4.webp", 
+    name: "Cliente 4" },
   {
     id: 5,
-    image: "/assets/imagens/clients/cliente05.webp",
+    image: "/assets/imagens/clients/cliente05.2.webp",
     name: "Cliente 5",
   },
 ];

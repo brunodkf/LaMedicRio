@@ -89,7 +89,7 @@ export default function SobrePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
               <Image
-                src="/assets/imagens/equipeLAmedicLuis.jpeg"
+                src="/assets/imagens/equipeLAmedicLuisRet.png"
                 alt="Equipe LA Medic Rio — Luís"
                 fill
                 className="object-cover object-center"
@@ -228,7 +228,7 @@ export default function SobrePage() {
             </div>
             <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/assets/imagens/qualidade.jpg"
+                src="/assets/imagens/qualidade.png"
                 alt="Qualidade de Vida — LA Médic Rio"
                 fill
                 className="object-cover object-center"

@@ -1,16 +1,15 @@
-import type { ReactNode } from "react";
+import type { ReactNode, HTMLAttributes } from "react";
 
-interface BadgeProps {
+interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode;
-  className?: string;
   light?: boolean;
 }
 
-export function Badge({ children, className = "", light = false }: BadgeProps) {
+export function Badge({ children, className = "", light = false, ...props }: BadgeProps) {
   return (
-    <div className={`inline-flex items-center gap-2 ${className}`}>
+    <div className={`inline-flex items-center gap-2 ${className}`} {...props}>
       <span
-        className={`block w-2 h-0.5 rounded-full flex-shrink-0 ${light ? "bg-brand-400" : "bg-brand-700"}`}
+        className={`block w-2 h-0.5 rounded-full shrink-0 ${light ? "bg-brand-400" : "bg-brand-700"}`}
         aria-hidden="true"
       />
       <span
