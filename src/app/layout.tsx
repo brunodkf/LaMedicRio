@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     default: "LA Médic Rio | Construindo um amanhã mais saudável",
     template: "%s | LA Médic Rio",
   },
+   icons: {
+    icon: "/assets/imagens/favicon.webp",
+  },
   description:
     "Comércio de Produtos Médicos Cirúrgicos. Somos os mais qualificados para o atendimento a: Urologia, Ginecologia, Proctologia e Cirurgia Geral.",
   keywords: [
